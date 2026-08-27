@@ -273,46 +273,100 @@ echo ""
 # -----------------------------------------------------------------------------
 echo -e "${BOLD}--- Step 6/8: Select Content (Product Categories) ---${NC}"
 echo ""
-echo -e "  ${DIM}Choose which product categories to include.${NC}"
-echo -e "  ${DIM}Press Enter to select all, or type numbers separated by spaces (e.g. 1 3 5)${NC}"
+echo -e "  ${DIM}Choose how to set up your product categories:${NC}"
+echo -e "  ${GREEN}[a]${NC} ${BOLD}All categories${NC} ${DIM}- Include every category from products.json${NC}"
+echo -e "  ${GREEN}[s]${NC} ${BOLD}Select from existing${NC} ${DIM}- Pick specific categories by number${NC}"
+echo -e "  ${YELLOW}[c]${NC} ${BOLD}Custom categories${NC} ${DIM}- Type your own category names${NC}"
 echo ""
-
-CATEGORIES=()
-if [ -f "${SCRIPT_DIR}/data/products.json" ]; then
-    # Extract categories from products.json
-    while IFS= read -r line; do
-        slug=$(echo "$line" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('slug',''))" 2>/dev/null)
-        label=$(echo "$line" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('label',''))" 2>/dev/null)
-        emoji=$(echo "$line" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('emoji',''))" 2>/dev/null)
-        count=$(python3 -c "import json; d=json.load(open('${SCRIPT_DIR}/data/products.json')); print(len([p for p in d['products'] if p['category']=='$slug']))" 2>/dev/null || echo "?")
-        if [ -n "$slug" ]; then
-            CATEGORIES+=("$slug")
-            echo -e "  ${CYAN}[$((${#CATEGORIES[@]}))]${NC} ${emoji} ${BOLD}${label}${NC} ${DIM}(${count} products)${NC}"
-        fi
-    done < <(python3 -c "import json; d=json.load(open('${SCRIPT_DIR}/data/products.json')); [print(json.dumps(c)) for c in d['categories']]" 2>/dev/null)
-fi
-
-echo ""
-read -p "  Include categories [1-${#CATEGORIES[@]} or 'all'] (default: all): " CAT_INPUT
-CAT_INPUT="${CAT_INPUT:-all}"
+read -p "  Choose [a/s/c] (default: a): " CAT_MODE
+CAT_MODE="${CAT_MODE:-a}"
+CAT_MODE=$(echo "$CAT_MODE" | tr '[:upper:]' '[:lower:]')
 
 SELECTED_CATEGORIES="all"
-if [[ "$CAT_INPUT" != "all" && "$CAT_INPUT" != "" ]]; then
-    SELECTED_CATEGORIES=""
-    for num in $CAT_INPUT; do
-        if [[ "$num" -ge 1 && "$num" -le "${#CATEGORIES[@]}" ]]; then
-            idx=$((num-1))
-            if [ -z "$SELECTED_CATEGORIES" ]; then
-                SELECTED_CATEGORIES="${CATEGORIES[$idx]}"
-            else
-                SELECTED_CATEGORIES="${SELECTED_CATEGORIES},${CATEGORIES[$idx]}"
-            fi
-        fi
-    done
-    [ -z "$SELECTED_CATEGORIES" ] && SELECTED_CATEGORIES="all"
-fi
+CUSTOM_CAT_NAMES=""
 
-echo -e "  ${GREEN}OK${NC} Selected: ${BOLD}${SELECTED_CATEGORIES}${NC}"
+if [[ "$CAT_MODE" == "s" ]]; then
+    # --- Select from existing categories ---
+    CATEGORIES=()
+    if [ -f "${SCRIPT_DIR}/data/products.json" ]; then
+        while IFS= read -r line; do
+            slug=$(echo "$line" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('slug',''))" 2>/dev/null)
+            label=$(echo "$line" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('label',''))" 2>/dev/null)
+            emoji=$(echo "$line" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('emoji',''))" 2>/dev/null)
+            count=$(python3 -c "import json; d=json.load(open('${SCRIPT_DIR}/data/products.json')); print(len([p for p in d['products'] if p['category']=='$slug']))" 2>/dev/null || echo "?")
+            if [ -n "$slug" ]; then
+                CATEGORIES+=("$slug")
+                echo -e "  ${CYAN}[$((${#CATEGORIES[@]}))]${NC} ${emoji} ${BOLD}${label}${NC} ${DIM}(${count} products)${NC}"
+            fi
+        done < <(python3 -c "import json; d=json.load(open('${SCRIPT_DIR}/data/products.json')); [print(json.dumps(c)) for c in d['categories']]" 2>/dev/null)
+    fi
+    echo ""
+    echo -e "  ${DIM}Type numbers separated by spaces (e.g. 1 3 5)${NC}"
+    read -p "  Select categories [1-${#CATEGORIES[@]}] (default: all): " CAT_INPUT
+    CAT_INPUT="${CAT_INPUT:-all}"
+
+    if [[ "$CAT_INPUT" != "all" && "$CAT_INPUT" != "" ]]; then
+        SELECTED_CATEGORIES=""
+        for num in $CAT_INPUT; do
+            if [[ "$num" -ge 1 && "$num" -le "${#CATEGORIES[@]}" ]]; then
+                idx=$((num-1))
+                if [ -z "$SELECTED_CATEGORIES" ]; then
+                    SELECTED_CATEGORIES="${CATEGORIES[$idx]}"
+                else
+                    SELECTED_CATEGORIES="${SELECTED_CATEGORIES},${CATEGORIES[$idx]}"
+                fi
+            fi
+        done
+        [ -z "$SELECTED_CATEGORIES" ] && SELECTED_CATEGORIES="all"
+    fi
+    echo -e "  ${GREEN}OK${NC} Selected: ${BOLD}${SELECTED_CATEGORIES}${NC}"
+
+elif [[ "$CAT_MODE" == "c" ]]; then
+    # --- Custom categories ---
+    echo ""
+    echo -e "  ${BOLD}${YELLOW}=== Custom Category Builder ===${NC}"
+    echo ""
+    read -p "  How many categories do you want? (1-20, default: 4): " NUM_CATS
+    NUM_CATS="${NUM_CATS:-4}"
+    # Validate it's a number
+    if ! [[ "$NUM_CATS" =~ ^[0-9]+$ ]] || [ "$NUM_CATS" -lt 1 ]; then
+        NUM_CATS=4
+    fi
+    if [ "$NUM_CATS" -gt 20 ]; then
+        NUM_CATS=20
+    fi
+
+    CUSTOM_CAT_SLUGS=""
+    DEFAULT_EMOJIS=("🌿" "🧴" "🫧" "🌱" "🪴" "🍯" "🧂" "🍄" "🫚" "🌺" "🍋" "🌶️" "🥜" "🌰" "🪷" "🫒" "🌰" "🌿" "🧄" "🥬")
+
+    for i in $(seq 1 $NUM_CATS); do
+        DEF_EMOJI="${DEFAULT_EMOJIS[$((i-1))]}"
+        read -p "  Category $i name (e.g. Herbs): " CAT_NAME
+        CAT_NAME="${CAT_NAME:-Category $i}"
+        read -p "  Category $i emoji (default: ${DEF_EMOJI}): " CAT_EMOJI
+        CAT_EMOJI="${CAT_EMOJI:-${DEF_EMOJI}}"
+        # Generate slug from name
+        CAT_SLUG=$(echo "$CAT_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-')
+        # Build JSON entry: {"slug":"...","label":"...","emoji":"...","icon":"sprout","description":"..."}
+        CAT_JSON="{\"slug\":\"${CAT_SLUG}\",\"label\":\"${CAT_NAME}\",\"emoji\":\"${CAT_EMOJI}\",\"icon\":\"sprout\",\"description\":\"Browse our ${CAT_NAME} collection\"}"
+        if [ -z "$CUSTOM_CAT_NAMES" ]; then
+            CUSTOM_CAT_NAMES="$CAT_JSON"
+        else
+            CUSTOM_CAT_NAMES="${CUSTOM_CAT_NAMES}|${CAT_JSON}"
+        fi
+        if [ -z "$CUSTOM_CAT_SLUGS" ]; then
+            CUSTOM_CAT_SLUGS="$CAT_SLUG"
+        else
+            CUSTOM_CAT_SLUGS="${CUSTOM_CAT_SLUGS},${CAT_SLUG}"
+        fi
+        echo -e "    ${GREEN}✓${NC} Added: ${CAT_EMOJI} ${CAT_NAME} (${CAT_SLUG})"
+    done
+    SELECTED_CATEGORIES="custom:${CUSTOM_CAT_SLUGS}"
+    echo -e ""
+    echo -e "  ${GREEN}OK${NC} Created ${NUM_CATS} custom categories"
+else
+    echo -e "  ${GREEN}OK${NC} All categories selected"
+fi
 echo ""
 
 # -----------------------------------------------------------------------------
@@ -396,6 +450,7 @@ if [[ "$CONFIRM" =~ ^[Yy]$ ]]; then
   "icons": "${SELECTED_ICONS}",
   "model": "${SELECTED_MODEL}",
   "categories": "${SELECTED_CATEGORIES}",
+  "custom_category_names": "${CUSTOM_CAT_NAMES}",
   "output_dir": "${OUTPUT_DIR}",
   "features": {
     "cart": "${FEATURES[cart]}",

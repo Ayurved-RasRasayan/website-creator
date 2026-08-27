@@ -289,12 +289,9 @@ def apply_icons_to_ui_js(ui_js, icon_mode, mapping, icon_init):
     return ui_js
 
 
-def filter_categories(output_dir, categories_str):
-    """Filter products.json to only include selected categories."""
-    if categories_str == 'all':
-        return
-
-    selected = [c.strip() for c in categories_str.split(',')]
+def filter_categories(output_dir, categories_str, custom_cat_names_str=''):
+    """Filter products.json to only include selected categories.
+    If categories_str starts with 'custom:', create brand new categories."""
     data_path = os.path.join(output_dir, 'data', 'products.json')
 
     if not os.path.exists(data_path):
@@ -302,6 +299,44 @@ def filter_categories(output_dir, categories_str):
         return
 
     data = load_json(data_path)
+
+    # --- Custom categories mode ---
+    if categories_str.startswith('custom:'):
+        slug_part = categories_str[len('custom:'):]
+        custom_slugs = [s.strip() for s in slug_part.split(',') if s.strip()]
+
+        # Parse custom category names from pipe-separated JSON entries
+        custom_cats = []
+        if custom_cat_names_str:
+            for entry in custom_cat_names_str.split('|'):
+                entry = entry.strip()
+                if entry:
+                    try:
+                        custom_cats.append(json.loads(entry))
+                    except json.JSONDecodeError:
+                        pass
+
+        # If parsing worked, use those; otherwise build from slugs
+        if custom_cats:
+            data['categories'] = custom_cats
+        else:
+            data['categories'] = [
+                {'slug': s, 'label': s.replace('-', ' ').title(), 'emoji': '🌿', 'icon': 'sprout', 'description': f'Browse our {s.replace("-", " ").title()} collection'}
+                for s in custom_slugs
+            ]
+
+        # Remove all products (custom categories start empty)
+        original_count = len(data['products'])
+        data['products'] = []
+        write_text(data_path, json.dumps(data, indent=2, ensure_ascii=False))
+        print(f"  Content: Created {len(data['categories'])} custom categories (empty, ready for products)")
+        return
+
+    # --- Normal mode ---
+    if categories_str == 'all':
+        return
+
+    selected = [c.strip() for c in categories_str.split(',')]
     original_count = len(data['products'])
 
     # Filter products
@@ -333,6 +368,12 @@ def apply_features(output_dir, features):
         'inquiry': 'functions/api/inquiry.js',
     }
 
+    index_path = os.path.join(output_dir, 'index.html')
+    html = load_text(index_path) if os.path.isfile(index_path) else ''
+
+    app_js_path = os.path.join(output_dir, 'js', 'app.js')
+    app_js = load_text(app_js_path) if os.path.isfile(app_js_path) else ''
+
     for feat, enabled in features.items():
         if enabled == 'off':
             # Remove the JS file
@@ -348,15 +389,55 @@ def apply_features(output_dir, features):
                 print(f"  Feature OFF: Removed {feature_functions[feat]}/")
 
             # Remove script tag from index.html
-            index_path = os.path.join(output_dir, 'index.html')
-            if os.path.isfile(index_path):
-                html = load_text(index_path)
-                # Remove <script src="js/feat.js"></script> lines
-                html = re.sub(rf'<script\s+src="js/{feat}\.js"><\/script>\s*\n?', '', html)
-                write_text(index_path, html)
+            if html:
+                html = re.sub(rf'<script\s+src="/js/{feat}\.js[^\"]*"><\/script>\s*\n?', '', html)
+
+            # --- Blog-specific HTML removal ---
+            if feat == 'blog' and html:
+                # Remove the blog section (<section id="blog"...>...</section>)
+                html = re.sub(
+                    r'\s*<!--\s*=+\s*BLOG\s*=+\s*-->.*?</section>\s*',
+                    '', html, flags=re.DOTALL
+                )
+                # Remove the blog modal
+                html = re.sub(
+                    r'\s*<!--\s*Blog Post Modal\s*-->.*?</div>\s*</div>\s*',
+                    '', html, flags=re.DOTALL
+                )
+                # Remove blog link from footer
+                html = re.sub(
+                    r'\s*<li><a\s+href="#blog"[^>]*>Blog</a></li>\s*',
+                    '', html
+                )
+
+            # --- Blog-specific JS removal in app.js ---
+            if feat == 'blog' and app_js:
+                # Remove: await Auth.init(); (if blog was tied to auth init)
+                # Keep Auth.init() since auth is for users, not blog
+                # Remove blog load/render calls
+                app_js = re.sub(r'\s*await\s+Blog\.load\(\);\s*\n?', '', app_js)
+                app_js = re.sub(r'\s*Blog\.renderBlogSection\(\);\s*\n?', '', app_js)
+                # Remove Blog nav button from renderCategoryNav (2 lines)
+                app_js = re.sub(
+                    r"\s*navHTML\s*\+=\s*`<button[^>]*>Blog<\/button>`;\s*\n?",
+                    '', app_js
+                )
+                app_js = re.sub(
+                    r"\s*mobileHTML\s*\+=\s*`<button[^>]*>Blog<\/button>`;\s*\n?",
+                    '', app_js
+                )
+
+            # --- Auth: ensure it's for website users, not blog ---
+            # (No extra removal needed - auth is already separate from blog)
 
         elif enabled == 'on':
             print(f"  Feature ON: {feat}")
+
+    # Write back modified files
+    if html and os.path.isfile(index_path):
+        write_text(index_path, html)
+    if app_js and os.path.isfile(app_js_path):
+        write_text(app_js_path, app_js)
 
 
 def generate_wrangler_toml(output_dir, site_config, features):
@@ -493,7 +574,8 @@ def generate_site(choices, output_dir):
 
     # --- Filter content (categories) ---
     print("  [6/7] Filtering content...")
-    filter_categories(output_dir, categories_str)
+    custom_cat_names = choices.get('custom_category_names', '')
+    filter_categories(output_dir, categories_str, custom_cat_names)
 
     # --- Apply feature toggles ---
     print("  [7/7] Applying feature toggles...")

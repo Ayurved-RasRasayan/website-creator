@@ -39,8 +39,8 @@ const Auth = {
         } else {
             ct.innerHTML = `
                 <div class="text-center mb-4 pt-2">
-                    <h3 class="text-lg font-bold text-emerald-900">Welcome</h3>
-                    <p class="text-sm text-emerald-600/50">Sign in to leave comments on the blog</p>
+                    <h3 class="text-lg font-bold text-emerald-900">My Account</h3>
+                    <p class="text-sm text-emerald-600/50">Sign in to manage orders, save favorites & more</p>
                 </div>
                 <div id="authModal_form"></div>`;
             this.renderInlineForm('authModal_form', () => {
