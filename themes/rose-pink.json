@@ -1,0 +1,43 @@
+{
+  "name": "Rose Pink",
+  "description": "Soft romantic pink tones",
+  "tailwind": {
+    "emerald": {
+      "50": "#FFF1F2", "100": "#FFE4E6", "200": "#FECDD3", "300": "#FDA4AF",
+      "400": "#FB7185", "500": "#F43F5E", "600": "#E11D48", "700": "#BE123C",
+      "800": "#9F1239", "900": "#881337", "950": "#4C0519"
+    },
+    "green": {
+      "50": "#FDF2F8", "100": "#FCE7F3", "200": "#FBCFE8", "300": "#F9A8D4",
+      "400": "#F472B6", "500": "#EC4899", "600": "#DB2777", "700": "#BE185D",
+      "800": "#9D174D", "900": "#831843", "950": "#500724"
+    },
+    "amber": {
+      "50": "#FFFBEB", "100": "#FEF3C7", "200": "#FDE68A", "300": "#FCD34D",
+      "400": "#FBBF24", "500": "#F59E0B", "600": "#D97706", "700": "#B45309",
+      "800": "#92400E", "900": "#78350F"
+    }
+  },
+  "css": {
+    "body_bg": "#FFFBFC",
+    "body_text": "#2D1B22",
+    "scrollbar": "#FECDD3",
+    "scrollbar_hover": "#FDA4AF",
+    "gradient_start": "#FB7185",
+    "gradient_mid": "#FDA4AF",
+    "gradient_end": "#F472B6",
+    "category_active_bg": "#E11D48",
+    "category_active_text": "#ffffff",
+    "category_text": "#BE123C",
+    "category_hover_bg": "#FFF1F2",
+    "skeleton_start": "#FFF1F2",
+    "skeleton_mid": "#FFE4E6",
+    "card_shadow_rgba": "225, 29, 72",
+    "card_hover_shadow_rgba": "225, 29, 72",
+    "toast_bg": "#E11D48",
+    "toast_error_bg": "#DC2626",
+    "bg_image": "none",
+    "bg_repeat": "no-repeat",
+    "bg_size": "auto"
+  }
+}

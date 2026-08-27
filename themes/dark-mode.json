@@ -1,0 +1,43 @@
+{
+  "name": "Dark Mode",
+  "description": "Sleek dark theme with teal accents",
+  "tailwind": {
+    "emerald": {
+      "50": "#F0FDFA", "100": "#CCFBF1", "200": "#99F6E4", "300": "#5EEAD4",
+      "400": "#2DD4BF", "500": "#14B8A6", "600": "#0D9488", "700": "#0F766E",
+      "800": "#115E59", "900": "#134E4A", "950": "#042F2E"
+    },
+    "green": {
+      "50": "#F0FDFA", "100": "#CCFBF1", "200": "#99F6E4", "300": "#5EEAD4",
+      "400": "#2DD4BF", "500": "#14B8A6", "600": "#0D9488", "700": "#0F766E",
+      "800": "#115E59", "900": "#134E4A", "950": "#042F2E"
+    },
+    "amber": {
+      "50": "#FFFBEB", "100": "#FEF3C7", "200": "#FDE68A", "300": "#FCD34D",
+      "400": "#FBBF24", "500": "#F59E0B", "600": "#D97706", "700": "#B45309",
+      "800": "#92400E", "900": "#78350F"
+    }
+  },
+  "css": {
+    "body_bg": "#0F172A",
+    "body_text": "#E2E8F0",
+    "scrollbar": "#334155",
+    "scrollbar_hover": "#475569",
+    "gradient_start": "#2DD4BF",
+    "gradient_mid": "#5EEAD4",
+    "gradient_end": "#14B8A6",
+    "category_active_bg": "#0D9488",
+    "category_active_text": "#ffffff",
+    "category_text": "#5EEAD4",
+    "category_hover_bg": "#1E293B",
+    "skeleton_start": "#1E293B",
+    "skeleton_mid": "#334155",
+    "card_shadow_rgba": "#13, 148, 136",
+    "card_hover_shadow_rgba": "#13, 148, 136",
+    "toast_bg": "#0D9488",
+    "toast_error_bg": "#EF4444",
+    "bg_image": "none",
+    "bg_repeat": "no-repeat",
+    "bg_size": "auto"
+  }
+}

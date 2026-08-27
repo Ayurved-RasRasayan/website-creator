@@ -2,6 +2,7 @@
 """
 Site Generator Engine - Called by 1.sh
 Reads user choices and generates a complete working website.
+Supports: themes (incl. custom), styles, icons, models, content filtering, feature toggles.
 """
 
 import json
@@ -67,7 +68,6 @@ def render_icon_tag(icon_name, class_names, icon_mode, mapping):
         return f'<span class="{class_names} inline-flex items-center justify-center">{emoji}</span>'
     elif icon_mode == 'heroicons':
         svg = mapping.get(icon_name, mapping.get('sprout', ''))
-        # Adjust class in SVG
         if class_names:
             svg = re.sub(r'class="([^"]*)"', f'class="{class_names}"', svg)
         return svg
@@ -75,17 +75,12 @@ def render_icon_tag(icon_name, class_names, icon_mode, mapping):
 
 
 def replace_icons_in_html(html, icon_mode, mapping):
-    """Replace data-lucide=\"X\" icon references in HTML.
-    The HTML has pre-rendered Lucide SVGs: <svg ... data-lucide=\"X\" class=\"lucide lucide-X ...\"><path ...></svg>
-    Also handles <i data-lucide=\"X\" class=\"Y\"></i> patterns.
-    """
+    """Replace data-lucide icon references in HTML."""
     if icon_mode == 'lucide':
-        # Still replace SVGs back to <i> tags so lucide.createIcons() can re-render
         def svg_to_i_tag(match):
             icon_name = match.group(1)
             full_svg = match.group(0)
             class_match = re.search(r'class="([^"]*?)"', full_svg)
-            # Extract utility classes (exclude lucide-specific ones)
             if class_match:
                 all_classes = class_match.group(1).split()
                 util_classes = [c for c in all_classes if not c.startswith('lucide')]
@@ -93,14 +88,12 @@ def replace_icons_in_html(html, icon_mode, mapping):
             else:
                 classes = 'w-6 h-6'
             return f'<i data-lucide="{icon_name}" class="{classes}"></i>'
-
         html = re.sub(
             r'<svg[^>]*data-lucide="([^"]+)"[^>]*>(?:(?!</svg>).)*</svg>',
             svg_to_i_tag, html, flags=re.DOTALL
         )
         return html
 
-    # For non-lucide modes: replace SVGs with the chosen icon library
     def replace_svg_icon(match):
         icon_name = match.group(1)
         full_svg = match.group(0)
@@ -113,37 +106,30 @@ def replace_icons_in_html(html, icon_mode, mapping):
             classes = 'w-6 h-6'
         return render_icon_tag(icon_name, classes, icon_mode, mapping)
 
-    # Match SVG icons with data-lucide attribute
     html = re.sub(
         r'<svg[^>]*data-lucide="([^"]+)"[^>]*>(?:(?!</svg>).)*</svg>',
         replace_svg_icon, html, flags=re.DOTALL
     )
-
-    # Also handle <i data-lucide="X"> patterns (in case any exist)
     def replace_i_tag(match):
         icon_name = match.group(1)
         full_tag = match.group(0)
         class_match = re.search(r'class="([^"]*)"', full_tag)
         classes = class_match.group(1) if class_match else 'w-6 h-6'
         return render_icon_tag(icon_name, classes, icon_mode, mapping)
-
     html = re.sub(r'<i\s+data-lucide="([^"]+)"[^>]*>', replace_i_tag, html)
     return html
 
 
 def replace_icons_in_js(js_code, icon_mode, mapping):
-    """Replace icon references in JS code (data-lucide attributes, lucide.createIcons())."""
+    """Replace icon references in JS code."""
     if icon_mode == 'lucide':
         return js_code
-
-    # Replace <i data-lucide="X" class="Y"></i> patterns in JS template literals
     def replace_lucide_tag(match):
         icon_name = match.group(1)
         full_tag = match.group(0)
         class_match = re.search(r'class="([^"]*)"', full_tag)
         classes = class_match.group(1) if class_match else 'w-6 h-6'
         return render_icon_tag(icon_name, classes, icon_mode, mapping)
-
     js_code = re.sub(r'<i\s+data-lucide="([^"]+)"[^>]*>', replace_lucide_tag, js_code)
     return js_code
 
@@ -154,7 +140,6 @@ def replace_icon_tag_markers(content, icon_mode, mapping):
         icon_name = match.group(1).split()[0]
         classes = ' '.join(match.group(1).split()[1:])
         return render_icon_tag(icon_name, classes, icon_mode, mapping)
-
     content = re.sub(r'%%ICON_TAG\s+([\w-]+\s+[\w\s-]+)%%', replace_marker, content)
     return content
 
@@ -167,7 +152,6 @@ def replace_icon_refresh(content, icon_init_code):
 def apply_theme_to_html(html, theme):
     """Replace tailwind color config in index.html."""
     colors_block = build_tailwind_colors(theme)
-    # Find and replace the colors block in tailwind config
     pattern = r'(colors:\s*\{)\s*emerald:\s*\{[^}]+\}[\s\S]*?amber:\s*\{[^}]+\}'
     replacement = f'\\1\n                            {colors_block}'
     html = re.sub(pattern, replacement, html)
@@ -177,12 +161,9 @@ def apply_theme_to_html(html, theme):
 def apply_theme_to_css(css, theme):
     """Replace hardcoded color values in styles.css."""
     c = theme['css']
-
-    # Body
     css = re.sub(r'background-color:\s*#[A-Fa-f0-9]+;', f'background-color: {c["body_bg"]};', css)
     css = re.sub(r'color:\s*#[A-Fa-f0-9]+;', f'color: {c["body_text"]};', css, count=1)
 
-    # Background image
     if c['bg_image'] == 'none':
         css = re.sub(r"background-image:\s*url\([^)]+\);", 'background-image: none;', css)
         css = css.replace('background-repeat: repeat;', 'background-repeat: no-repeat;')
@@ -190,64 +171,41 @@ def apply_theme_to_css(css, theme):
     else:
         css = re.sub(r"background-image:\s*url\([^)]+\);", f'background-image: {c["bg_image"]};', css)
 
-    # Scrollbar thumb
     css = re.sub(
         r'(::-webkit-scrollbar-thumb\s*\{[^}]*?)background:\s*#[A-Fa-f0-9]+;',
         lambda m: m.group(1) + f'background: {c["scrollbar"]};', css)
-    # Scrollbar thumb hover
     css = re.sub(
         r'(::-webkit-scrollbar-thumb:hover\s*\{[^}]*?)background:\s*#[A-Fa-f0-9]+;',
         lambda m: m.group(1) + f'background: {c["scrollbar_hover"]};', css)
-
-    # Gradient text
     css = re.sub(r'linear-gradient\(135deg,\s*#[A-Fa-f0-9]+,\s*#[A-Fa-f0-9]+,\s*#[A-Fa-f0-9]+\)',
         f'linear-gradient(135deg, {c["gradient_start"]}, {c["gradient_mid"]}, {c["gradient_end"]})', css)
 
-    # Category button active - bg
     pat = r'(\.category-btn\.active\s*\{[^}]*?)background-color:\s*#[A-Fa-f0-9]+;'
-    css = re.sub(pat,
-        lambda m: m.group(1) + 'background-color: ' + c['category_active_bg'] + ';', css)
-    # Category button active - color
-    css = re.sub(
-        r'(\.category-btn\.active\s*\{[^}]*?)color:\s*#[A-Fa-f0-9]+;',
+    css = re.sub(pat, lambda m: m.group(1) + 'background-color: ' + c['category_active_bg'] + ';', css)
+    css = re.sub(r'(\.category-btn\.active\s*\{[^}]*?)color:\s*#[A-Fa-f0-9]+;',
         lambda m: m.group(1) + 'color: ' + c['category_active_text'] + ';', css)
-    # Category button not active - color
-    css = re.sub(
-        r'(\.category-btn:not\(\.active\)\s*\{[^}]*?)color:\s*#[A-Fa-f0-9]+;',
+    css = re.sub(r'(\.category-btn:not\(\.active\)\s*\{[^}]*?)color:\s*#[A-Fa-f0-9]+;',
         lambda m: m.group(1) + 'color: ' + c['category_text'] + ';', css)
-    # Category button not active hover - bg
-    css = re.sub(
-        r'(\.category-btn:not\(\.active\):hover\s*\{[^}]*?)background-color:\s*#[A-Fa-f0-9]+;',
+    css = re.sub(r'(\.category-btn:not\(\.active\):hover\s*\{[^}]*?)background-color:\s*#[A-Fa-f0-9]+;',
         lambda m: m.group(1) + 'background-color: ' + c['category_hover_bg'] + ';', css)
 
-    # Skeleton
     css = re.sub(r'background:\s*linear-gradient\(90deg,\s*#[A-Fa-f0-9]+\s*25%,\s*#[A-Fa-f0-9]+\s*50%,\s*#[A-Fa-f0-9]+\s*75%\)',
         f'background: linear-gradient(90deg, {c["skeleton_start"]} 25%, {c["skeleton_mid"]} 50%, {c["skeleton_start"]} 75%)', css)
 
-    # Ring/outline colors in card selects
     ring_color = c['category_active_bg'].lstrip('#')
-    css = re.sub(
-        r'(ring:\s*1px\s*solid\s*)#[A-Fa-f0-9]+;',
-        lambda m: m.group(1) + '#' + ring_color + ';', css)
-    css = re.sub(
-        r'(focus:ring[^;]*?)#[A-Fa-f0-9]+;',
-        lambda m: m.group(1) + '#' + ring_color + ';', css)
+    css = re.sub(r'(ring:\s*1px\s*solid\s*)#[A-Fa-f0-9]+;', lambda m: m.group(1) + '#' + ring_color + ';', css)
+    css = re.sub(r'(focus:ring[^;]*?)#[A-Fa-f0-9]+;', lambda m: m.group(1) + '#' + ring_color + ';', css)
 
-    # Card shadow
     rgba_val = c['card_shadow_rgba']
     css = re.sub(r'box-shadow:\s*0\s+10px\s+25px\s*-5px\s*rgba\([^)]+\)',
         f'box-shadow: 0 10px 25px -5px rgba({rgba_val}, 0.1)', css)
     css = re.sub(r'0\s+8px\s+10px\s*-6px\s*rgba\([^)]+\)',
         f'0 8px 10px -6px rgba({rgba_val}, 0.05)', css)
-
-    # Toast - in ui.js Toast.show(), not in styles.css, skip
-    # The toast uses Tailwind classes so theme colors handle it
-
     return css
+
 
 def apply_style_to_css(css, style_config, overrides_css):
     """Apply style-specific overrides to CSS."""
-    # Replace font family in the base * selector
     css = re.sub(r"font-family:\s*[^;]+;", f'font-family: {style_config["font_family"]};', css, count=1)
     return css + '\n\n/* === Style: ' + style_config['name'] + ' === */\n' + overrides_css
 
@@ -257,15 +215,10 @@ def inject_card_modal_into_ui(ui_js, model_dir, icon_mode, mapping):
     card_js = load_text(os.path.join(model_dir, 'card.js'))
     modal_js = load_text(os.path.join(model_dir, 'modal.js'))
 
-    # Replace renderProductCard method
-    pattern_card = r'(renderProductCard\(p\)\s*\{)[\s\S]*?^(    \},)'
-    # Use a simpler approach: find the function boundaries
     card_start = ui_js.find('renderProductCard(p) {')
     if card_start == -1:
         print('ERROR: Could not find renderProductCard in ui.js template')
         sys.exit(1)
-
-    # Find the matching closing - count braces
     brace_count = 0
     started = False
     card_end = card_start
@@ -278,15 +231,12 @@ def inject_card_modal_into_ui(ui_js, model_dir, icon_mode, mapping):
             if started and brace_count == 0:
                 card_end = i + 1
                 break
-
     ui_js = ui_js[:card_start] + card_js.rstrip() + '\n' + ui_js[card_end:]
 
-    # Replace openProductModal method
     modal_start = ui_js.find('openProductModal(productId) {')
     if modal_start == -1:
         print('ERROR: Could not find openProductModal in ui.js template')
         sys.exit(1)
-
     brace_count = 0
     started = False
     modal_end = modal_start
@@ -299,24 +249,17 @@ def inject_card_modal_into_ui(ui_js, model_dir, icon_mode, mapping):
             if started and brace_count == 0:
                 modal_end = i + 1
                 break
-
     ui_js = ui_js[:modal_start] + modal_js.rstrip() + '\n' + ui_js[modal_end:]
 
-    # Apply icon replacements in the injected code
     ui_js = replace_icons_in_js(ui_js, icon_mode, mapping)
     ui_js = replace_icon_tag_markers(ui_js, icon_mode, mapping)
-
     return ui_js
 
 
 def apply_icons_to_html(html, icon_mode, mapping, cdn_html):
     """Replace icon CDN and data-lucide references in HTML."""
-    # Replace Lucide CDN with chosen icon CDN
     html = re.sub(r'<script src="https://unpkg\.com/lucide@latest"></script>', cdn_html, html)
-
-    # Replace data-lucide icon references in HTML
     html = replace_icons_in_html(html, icon_mode, mapping)
-
     return html
 
 
@@ -333,11 +276,8 @@ def apply_font_to_html(html, style_config):
 def apply_icons_to_app_js(app_js, icon_mode, mapping, icon_init):
     """Replace icon references in app.js."""
     app_js = replace_icons_in_js(app_js, icon_mode, mapping)
-
-    # Replace lucide.createIcons() calls
     if icon_mode != 'lucide':
         app_js = app_js.replace('lucide.createIcons();', '')
-        # Remove the line entirely if empty
         app_js = re.sub(r'\n\s*// \d+\. Initialize.*?icons\n\s*$', '\n', app_js)
     return app_js
 
@@ -349,8 +289,94 @@ def apply_icons_to_ui_js(ui_js, icon_mode, mapping, icon_init):
     return ui_js
 
 
-def generate_wrangler_toml(output_dir, site_config):
+def filter_categories(output_dir, categories_str):
+    """Filter products.json to only include selected categories."""
+    if categories_str == 'all':
+        return
+
+    selected = [c.strip() for c in categories_str.split(',')]
+    data_path = os.path.join(output_dir, 'data', 'products.json')
+
+    if not os.path.exists(data_path):
+        print(f"  WARNING: products.json not found at {data_path}")
+        return
+
+    data = load_json(data_path)
+    original_count = len(data['products'])
+
+    # Filter products
+    data['products'] = [p for p in data['products'] if p['category'] in selected]
+
+    # Filter categories
+    data['categories'] = [c for c in data['categories'] if c['slug'] in selected]
+
+    # Filter testimonials (keep all - they're site-wide)
+
+    write_text(data_path, json.dumps(data, indent=2, ensure_ascii=False))
+
+    kept = len(data['products'])
+    removed = original_count - kept
+    print(f"  Content: Kept {kept} products in {len(data['categories'])} categories (removed {removed})")
+
+
+def apply_features(output_dir, features):
+    """Enable/disable feature JS files and HTML sections."""
+    feature_files = {
+        'cart': 'js/cart.js',
+        'auth': 'js/auth.js',
+        'blog': 'js/blog.js',
+        'inquiry': 'js/inquiry.js',
+    }
+    feature_functions = {
+        'auth': 'functions/api/auth',
+        'blog': 'functions/api/blog',
+        'inquiry': 'functions/api/inquiry.js',
+    }
+
+    for feat, enabled in features.items():
+        if enabled == 'off':
+            # Remove the JS file
+            js_path = os.path.join(output_dir, feature_files.get(feat, ''))
+            if js_path and os.path.isfile(js_path):
+                os.remove(js_path)
+                print(f"  Feature OFF: Removed {feature_files[feat]}")
+
+            # Remove functions directory
+            fn_path = os.path.join(output_dir, feature_functions.get(feat, ''))
+            if fn_path and os.path.isdir(fn_path):
+                shutil.rmtree(fn_path)
+                print(f"  Feature OFF: Removed {feature_functions[feat]}/")
+
+            # Remove script tag from index.html
+            index_path = os.path.join(output_dir, 'index.html')
+            if os.path.isfile(index_path):
+                html = load_text(index_path)
+                # Remove <script src="js/feat.js"></script> lines
+                html = re.sub(rf'<script\s+src="js/{feat}\.js"><\/script>\s*\n?', '', html)
+                write_text(index_path, html)
+
+        elif enabled == 'on':
+            print(f"  Feature ON: {feat}")
+
+
+def generate_wrangler_toml(output_dir, site_config, features):
     """Generate wrangler.toml with user's site config."""
+    db_block = ""
+    if features.get('blog', 'on') == 'on':
+        db_block = '''
+[[d1_databases]]
+binding = "DB"
+database_name = "blog-db"
+database_id = "<place your uuid here>"
+'''
+    if features.get('auth', 'on') == 'on':
+        db_block += '''
+[[d1_databases]]
+binding = "DB1"
+database_name = "users-db"
+database_id = "<place your uuid here>"
+'''
+
     content = f"""# =============================================================================
 # Cloudflare Pages Configuration
 # Auto-generated by Site Generator
@@ -358,17 +384,7 @@ def generate_wrangler_toml(output_dir, site_config):
 
 name = "{site_config['project_name']}"
 compatibility_date = "2024-01-01"
-
-[[d1_databases]]
-binding = "DB"
-database_name = "blog-db"
-database_id = "<place your uuid here>"
-
-[[d1_databases]]
-binding = "DB1"
-database_name = "users-db"
-database_id = "<place your uuid here>"
-
+{db_block}
 [vars]
 SITE_NAME = "{site_config['site_name']}"
 SITE_TAGLINE = "{site_config['site_tagline']}"
@@ -393,15 +409,31 @@ def generate_site(choices, output_dir):
     icon_name = choices['icons']
     model_name = choices['model']
     site_config = choices['site']
+    categories_str = choices.get('categories', 'all')
+    features = choices.get('features', {
+        'cart': 'on', 'auth': 'on', 'blog': 'on', 'inquiry': 'on'
+    })
 
-    print(f"\n  Theme:   {theme_name}")
-    print(f"  Style:   {style_name}")
-    print(f"  Icons:   {icon_name}")
-    print(f"  Model:   {model_name}")
-    print(f"  Output:  {output_dir}")
+    print(f"\n  Theme:       {theme_name}")
+    print(f"  Style:       {style_name}")
+    print(f"  Icons:       {icon_name}")
+    print(f"  Model:       {model_name}")
+    print(f"  Categories:  {categories_str}")
+    print(f"  Features:    {', '.join(f'{k}={v}' for k,v in features.items())}")
+    print(f"  Output:      {output_dir}")
 
-    # Load configs
-    theme = load_json(os.path.join(MASTER_DIR, 'themes', f'{theme_name}.json'))
+    # --- Load theme ---
+    if theme_name == '.custom-theme':
+        custom_path = os.path.join(MASTER_DIR, '.custom-theme.json')
+        if os.path.exists(custom_path):
+            theme = load_json(custom_path)
+            print(f"  Custom theme loaded!")
+        else:
+            print("ERROR: Custom theme file not found!")
+            sys.exit(1)
+    else:
+        theme = load_json(os.path.join(MASTER_DIR, 'themes', f'{theme_name}.json'))
+
     style_config = load_json(os.path.join(MASTER_DIR, 'styles', style_name, 'config.json'))
     style_overrides = load_text(os.path.join(MASTER_DIR, 'styles', style_name, 'overrides.css'))
     icon_pack_dir = os.path.join(MASTER_DIR, 'icons', icon_name)
@@ -427,7 +459,7 @@ def generate_site(choices, output_dir):
             shutil.copy2(src, dst)
 
     # --- Generate index.html ---
-    print("  [1/6] Generating index.html...")
+    print("  [1/7] Generating index.html...")
     html = load_text(os.path.join(MASTER_DIR, 'templates', 'index.html.tpl'))
     html = apply_theme_to_html(html, theme)
     html = apply_font_to_html(html, style_config)
@@ -435,14 +467,14 @@ def generate_site(choices, output_dir):
     write_text(os.path.join(output_dir, 'index.html'), html)
 
     # --- Generate styles.css ---
-    print("  [2/6] Generating styles.css...")
+    print("  [2/7] Generating styles.css...")
     css = load_text(os.path.join(MASTER_DIR, 'templates', 'styles.css.tpl'))
     css = apply_theme_to_css(css, theme)
     css = apply_style_to_css(css, style_config, style_overrides)
     write_text(os.path.join(output_dir, 'css', 'styles.css'), css)
 
     # --- Generate ui.js ---
-    print("  [3/6] Generating ui.js...")
+    print("  [3/7] Generating ui.js...")
     ui_js = load_text(os.path.join(MASTER_DIR, 'templates', 'ui.js.tpl'))
     ui_js = inject_card_modal_into_ui(ui_js, model_dir, icon_mode, icon_mapping)
     ui_js = apply_icons_to_ui_js(ui_js, icon_mode, icon_mapping, icon_init)
@@ -450,17 +482,22 @@ def generate_site(choices, output_dir):
     write_text(os.path.join(output_dir, 'js', 'ui.js'), ui_js)
 
     # --- Generate app.js ---
-    print("  [4/6] Generating app.js...")
+    print("  [4/7] Generating app.js...")
     app_js = load_text(os.path.join(MASTER_DIR, 'templates', 'app.js.tpl'))
     app_js = apply_icons_to_app_js(app_js, icon_mode, icon_mapping, icon_init)
     write_text(os.path.join(output_dir, 'js', 'app.js'), app_js)
 
     # --- Generate wrangler.toml ---
-    print("  [5/6] Generating wrangler.toml...")
-    generate_wrangler_toml(output_dir, site_config)
+    print("  [5/7] Generating wrangler.toml...")
+    generate_wrangler_toml(output_dir, site_config, features)
 
-    # --- Copy remaining JS files ---
-    print("  [6/6] Copying supporting files...")
+    # --- Filter content (categories) ---
+    print("  [6/7] Filtering content...")
+    filter_categories(output_dir, categories_str)
+
+    # --- Apply feature toggles ---
+    print("  [7/7] Applying feature toggles...")
+    apply_features(output_dir, features)
 
     print(f"\n  Site generated successfully!")
     return True

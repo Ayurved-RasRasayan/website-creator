@@ -1,0 +1,43 @@
+{
+  "name": "Earthy Brown",
+  "description": "Warm natural earth tones",
+  "tailwind": {
+    "emerald": {
+      "50": "#FDF8F0", "100": "#F5EDE0", "200": "#EBDDC1", "300": "#D4C4A0",
+      "400": "#C4A872", "500": "#B08D57", "600": "#9A7640", "700": "#7D5F33",
+      "800": "#654D2B", "900": "#4A3920", "950": "#2D2013"
+    },
+    "green": {
+      "50": "#FEFCE8", "100": "#FEF9C3", "200": "#FEF08A", "300": "#FDE047",
+      "400": "#FACC15", "500": "#EAB308", "600": "#CA8A04", "700": "#A16207",
+      "800": "#854D0E", "900": "#713F12", "950": "#422006"
+    },
+    "amber": {
+      "50": "#FFFBEB", "100": "#FEF3C7", "200": "#FDE68A", "300": "#FCD34D",
+      "400": "#FBBF24", "500": "#F59E0B", "600": "#D97706", "700": "#B45309",
+      "800": "#92400E", "900": "#78350F"
+    }
+  },
+  "css": {
+    "body_bg": "#FDF8F0",
+    "body_text": "#3D2E1F",
+    "scrollbar": "#EBDDC1",
+    "scrollbar_hover": "#D4C4A0",
+    "gradient_start": "#C4A872",
+    "gradient_mid": "#D4C4A0",
+    "gradient_end": "#B08D57",
+    "category_active_bg": "#9A7640",
+    "category_active_text": "#ffffff",
+    "category_text": "#7D5F33",
+    "category_hover_bg": "#FDF8F0",
+    "skeleton_start": "#FDF8F0",
+    "skeleton_mid": "#F5EDE0",
+    "card_shadow_rgba": "154, 118, 64",
+    "card_hover_shadow_rgba": "154, 118, 64",
+    "toast_bg": "#9A7640",
+    "toast_error_bg": "#DC2626",
+    "bg_image": "none",
+    "bg_repeat": "no-repeat",
+    "bg_size": "auto"
+  }
+}
