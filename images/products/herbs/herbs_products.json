@@ -1,0 +1,1432 @@
+[
+  {
+    "id": 1,
+    "name": "Amaltas",
+    "emoji": "🌿",
+    "image": "amaltas.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 2,
+    "name": "Amla",
+    "emoji": "🌿",
+    "image": "amla.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 3,
+    "name": "Apamarg Chirchita",
+    "emoji": "🌿",
+    "image": "apamarg-chirchita.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 4,
+    "name": "Arjuna Chal",
+    "emoji": "🌿",
+    "image": "arjuna-chal.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 5,
+    "name": "Ashwaganda",
+    "emoji": "🌿",
+    "image": "ashwaganda.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 6,
+    "name": "Asuro",
+    "emoji": "🌿",
+    "image": "asuro.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 7,
+    "name": "Barro",
+    "emoji": "🌿",
+    "image": "barro.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 8,
+    "name": "Barun Chal",
+    "emoji": "🌿",
+    "image": "barun-chal.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 9,
+    "name": "Belgiri",
+    "emoji": "🌿",
+    "image": "belgiri.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 10,
+    "name": "Bharmi",
+    "emoji": "🌿",
+    "image": "bharmi.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 11,
+    "name": "Bhilawa",
+    "emoji": "🌿",
+    "image": "bhilawa.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 12,
+    "name": "Bhojo",
+    "emoji": "🌿",
+    "image": "bhojo.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 13,
+    "name": "Bringraj",
+    "emoji": "🌿",
+    "image": "bringraj.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 14,
+    "name": "Cheer Pine Behroza",
+    "emoji": "🌿",
+    "image": "cheer-pine-behroza.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 15,
+    "name": "Chirata",
+    "emoji": "🌿",
+    "image": "chirata.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 16,
+    "name": "Chitrak",
+    "emoji": "🌿",
+    "image": "chitrak.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 17,
+    "name": "Chooti Harad",
+    "emoji": "🌿",
+    "image": "chooti-harad.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 18,
+    "name": "Dhataki",
+    "emoji": "🌿",
+    "image": "dhataki.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 19,
+    "name": "Giloy",
+    "emoji": "🌿",
+    "image": "giloy.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 20,
+    "name": "Gokharu",
+    "emoji": "🌿",
+    "image": "gokharu.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 21,
+    "name": "Gudmar",
+    "emoji": "🌿",
+    "image": "gudmar.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 22,
+    "name": "Guggle",
+    "emoji": "🌿",
+    "image": "guggle.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 23,
+    "name": "Harro Powder",
+    "emoji": "🌿",
+    "image": "harro-powder.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 24,
+    "name": "Indrajau",
+    "emoji": "🌿",
+    "image": "indrajau.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 25,
+    "name": "Jaivitri",
+    "emoji": "🌿",
+    "image": "jaivitri.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 26,
+    "name": "Jethimadhu",
+    "emoji": "🌿",
+    "image": "jethimadhu.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 27,
+    "name": "Kachur",
+    "emoji": "🌿",
+    "image": "kachur.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 28,
+    "name": "Kali Musli",
+    "emoji": "🌿",
+    "image": "kali-musli.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 29,
+    "name": "Kalijeera",
+    "emoji": "🌿",
+    "image": "kalijeera.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 30,
+    "name": "Kanchanar Chal",
+    "emoji": "🌿",
+    "image": "kanchanar-chal.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 31,
+    "name": "Kantakari",
+    "emoji": "🌿",
+    "image": "kantakari.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 32,
+    "name": "Kuchila",
+    "emoji": "🌿",
+    "image": "kuchila.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 33,
+    "name": "Lothsalla Himalayan Yew",
+    "emoji": "🌿",
+    "image": "Lothsalla-himalayan-yew.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 34,
+    "name": "Majistha",
+    "emoji": "🌿",
+    "image": "majistha.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 35,
+    "name": "Moringa Leaves Dried",
+    "emoji": "🌿",
+    "image": "moringa-leaves-dried.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 36,
+    "name": "Nagarmotha",
+    "emoji": "🌿",
+    "image": "nagarmotha.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 37,
+    "name": "Neem",
+    "emoji": "🌿",
+    "image": "neem.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 38,
+    "name": "Nirgundi",
+    "emoji": "🌿",
+    "image": "nirgundi.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 39,
+    "name": "Nisodh",
+    "emoji": "🌿",
+    "image": "nisodh.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 40,
+    "name": "Pakhanved",
+    "emoji": "🌿",
+    "image": "pakhanved.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 41,
+    "name": "Punanarva",
+    "emoji": "🌿",
+    "image": "punanarva.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 42,
+    "name": "Ral Safed",
+    "emoji": "🌿",
+    "image": "ral-safed.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 43,
+    "name": "Rittha",
+    "emoji": "🌿",
+    "image": "rittha.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 44,
+    "name": "Safed Musli",
+    "emoji": "🌿",
+    "image": "safed-musli.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 45,
+    "name": "Sankhapuspi",
+    "emoji": "🌿",
+    "image": "sankhapuspi.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 46,
+    "name": "Sarpaganda",
+    "emoji": "🌿",
+    "image": "sarpaganda.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 47,
+    "name": "Sennaleaves",
+    "emoji": "🌿",
+    "image": "SennaLeaves.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 48,
+    "name": "Shikakai",
+    "emoji": "🌿",
+    "image": "shikakai.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 49,
+    "name": "Sonth Dried Ginger",
+    "emoji": "🌿",
+    "image": "sonth-dried-ginger.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 50,
+    "name": "Stinging Nettle Sisno",
+    "emoji": "🌿",
+    "image": "stinging-nettle-sisno.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 51,
+    "name": "Sugandhawal",
+    "emoji": "🌿",
+    "image": "sugandhawal.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 52,
+    "name": "Talispatra",
+    "emoji": "🌿",
+    "image": "talispatra.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 53,
+    "name": "Triphala Powder",
+    "emoji": "🌿",
+    "image": "triphala-powder.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 54,
+    "name": "Tulsi",
+    "emoji": "🌿",
+    "image": "tulsi.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  },
+  {
+    "id": 55,
+    "name": "Wild Asparagus",
+    "emoji": "🌿",
+    "image": "wild-asparagus.jpg",
+    "category": "herbs",
+    "description": "No description provided.",
+    "price": 12.99,
+    "comparePrice": 16.99,
+    "rating": 4.9,
+    "reviews": 234,
+    "defaultWeight": "1 Kg",
+    "unitType": "weight",
+    "featured": true,
+    "weights": [
+      "250g",
+      "500g",
+      "1 Kg"
+    ],
+    "priceMultiplier": {
+      "250g": 0.3,
+      "500g": 0.6,
+      "1 Kg": 1
+    },
+    "video": "/videos/organic-tulsi-holy-basil.mp4"
+  }
+]

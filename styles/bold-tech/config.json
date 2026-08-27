@@ -1,0 +1,13 @@
+{
+  "name": "Bold Tech",
+  "description": "Sharp futuristic look with Space Grotesk font",
+  "font_family": "'Space Grotesk', system-ui, -apple-system, sans-serif",
+  "font_link": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap",
+  "font_name": "Space Grotesk",
+  "border_radius_card": "0.75rem",
+  "border_radius_card_sm": "0.5rem",
+  "border_radius_btn": "0.5rem",
+  "border_radius_badge": "0.25rem",
+  "shadow_intensity": "1.5",
+  "grid_density": "compact"
+}

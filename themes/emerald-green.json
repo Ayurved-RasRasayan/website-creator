@@ -1,0 +1,43 @@
+{
+  "name": "Emerald Green",
+  "description": "Fresh organic green - the original default",
+  "tailwind": {
+    "emerald": {
+      "50": "#ECFDF5", "100": "#D1FAE5", "200": "#A7F3D0", "300": "#6EE7B7",
+      "400": "#34D399", "500": "#10B981", "600": "#059669", "700": "#047857",
+      "800": "#065F46", "900": "#064E3B", "950": "#022C22"
+    },
+    "green": {
+      "50": "#F0FDF4", "100": "#DCFCE7", "200": "#BBF7D0", "300": "#86EFAC",
+      "400": "#4ADE80", "500": "#22C55E", "600": "#16A34A", "700": "#15803D",
+      "800": "#166534", "900": "#14532D", "950": "#052E16"
+    },
+    "amber": {
+      "50": "#FFFBEB", "100": "#FEF3C7", "200": "#FDE68A", "300": "#FCD34D",
+      "400": "#FBBF24", "500": "#F59E0B", "600": "#D97706", "700": "#B45309",
+      "800": "#92400E", "900": "#78350F"
+    }
+  },
+  "css": {
+    "body_bg": "#FEFEFE",
+    "body_text": "#1A2B2D",
+    "scrollbar": "#A7F3D0",
+    "scrollbar_hover": "#6EE7B7",
+    "gradient_start": "#34D399",
+    "gradient_mid": "#86EFAC",
+    "gradient_end": "#2DD4BF",
+    "category_active_bg": "#059669",
+    "category_active_text": "#ffffff",
+    "category_text": "#047857",
+    "category_hover_bg": "#ECFDF5",
+    "skeleton_start": "#ECFDF5",
+    "skeleton_mid": "#D1FAE5",
+    "card_shadow_rgba": "5, 150, 105",
+    "card_hover_shadow_rgba": "5, 150, 105",
+    "toast_bg": "#059669",
+    "toast_error_bg": "#EF4444",
+    "bg_image": "url('../images/gau-pattern.jpg')",
+    "bg_repeat": "repeat",
+    "bg_size": "160px 140px"
+  }
+}

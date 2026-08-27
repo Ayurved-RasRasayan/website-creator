@@ -1,0 +1,4197 @@
+{
+  "categories": [
+    {
+      "slug": "herbs",
+      "label": "Herbs",
+      "icon": "sprout",
+      "emoji": "🌱",
+      "bgClass": "bg-green-50 text-green-700 border-green-200",
+      "color": "green",
+      "description": "Hand-picked medicinal and culinary herbs grown organically for maximum potency and freshness.",
+      "video": "https://videos.pexels.com/video-files/4064620/4064620-uhd_2560_1440_25fps.mp4"
+    },
+    {
+      "slug": "resin",
+      "label": "Resin",
+      "icon": "droplets",
+      "emoji": "🌲",
+      "bgClass": "bg-amber-50 text-amber-700 border-amber-200",
+      "color": "amber",
+      "description": "Pure natural resins harvested from sacred trees, used for incense, rituals, and traditional medicine.",
+      "video": "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4"
+    },
+    {
+      "slug": "oils",
+      "label": "Oils",
+      "icon": "flask-conical",
+      "emoji": "🫒",
+      "bgClass": "bg-yellow-50 text-yellow-700 border-yellow-200",
+      "color": "yellow",
+      "description": "Cold-pressed essential and carrier oils extracted from premium quality herbs and seeds.",
+      "video": "https://videos.pexels.com/video-files/3945049/3945049-uhd_2560_1440_25fps.mp4"
+    },
+    {
+      "slug": "seeds",
+      "label": "Seeds",
+      "icon": "circle-dot",
+      "emoji": "🫘",
+      "bgClass": "bg-lime-50 text-lime-700 border-lime-200",
+      "color": "lime",
+      "description": "Organic and heirloom seeds for planting, cooking, and sprouting. High germination guaranteed.",
+      "video": "https://videos.pexels.com/video-files/4064620/4064620-uhd_2560_1440_25fps.mp4"
+    },
+    {
+      "slug": "soap",
+      "label": "Soap",
+      "icon": "sparkles",
+      "emoji": "🧼",
+      "bgClass": "bg-sky-50 text-sky-700 border-sky-200",
+      "color": "sky",
+      "description": "Handcrafted herbal soaps made with pure essential oils and natural ingredients for gentle daily cleansing.",
+      "video": "https://videos.pexels.com/video-files/3992684/3992684-uhd_2560_1440_25fps.mp4"
+    },
+    {
+      "slug": "namak",
+      "label": "Namak (Salt)",
+      "icon": "mountain",
+      "emoji": "🧂",
+      "bgClass": "bg-slate-50 text-slate-700 border-slate-200",
+      "color": "slate",
+      "description": "Pure Himalayan rock salt and traditional Indian salts rich in minerals for cooking and therapeutic baths.",
+      "video": "https://videos.pexels.com/video-files/3574255/3574255-uhd_2560_1440_25fps.mp4"
+    },
+    {
+      "slug": "masala",
+      "label": "Masala (Spices)",
+      "icon": "flame",
+      "emoji": "🌶️",
+      "bgClass": "bg-red-50 text-red-700 border-red-200",
+      "color": "red",
+      "description": "Aromatic spice blends and whole spices hand-selected for authentic Indian cooking and Ayurvedic formulations.",
+      "video": "https://videos.pexels.com/video-files/4509354/4509354-uhd_2560_1440_25fps.mp4"
+    },
+    {
+      "slug": "mushroom",
+      "label": "Mushroom",
+      "icon": "tree-deciduous",
+      "emoji": "🍄",
+      "bgClass": "bg-orange-50 text-orange-700 border-orange-200",
+      "color": "orange",
+      "description": "Dried medicinal mushrooms and powders for immunity boosting, cognitive support, and traditional healing.",
+      "video": "https://videos.pexels.com/video-files/6843081/6843081-uhd_2560_1440_25fps.mp4"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Amaltas",
+      "emoji": "🌿",
+      "image": "amaltas.jpg",
+      "category": "herbs",
+      "description": "Known as 'Aragvadha' (disease-killer) in Ayurveda, Amaltas is revered for its gentle laxative properties and skin healing abilities. This golden shower tree pod supports healthy digestion, helps detoxify the body naturally, and promotes wound healing when applied topically. A traditional remedy for constipation and skin ailments, perfect for your wellness routine.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 2,
+      "name": "Amla",
+      "emoji": "🌿",
+      "image": "amla.jpg",
+      "category": "herbs",
+      "description": "Nature's powerhouse of Vitamin C – Amla (Indian Gooseberry) is one of the richest sources of antioxidants in the plant kingdom. This superfruit boosts immunity, enhances digestion, promotes hair growth, and rejuvenates skin from within. Regular use supports heart health, improves eyesight, and helps your body fight free radicals for lasting vitality.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 3,
+      "name": "Apamarg Chirchita",
+      "emoji": "🌿",
+      "image": "apamarg-chirchita.jpg",
+      "category": "herbs",
+      "description": "A potent Ayurvedic herb traditionally used for respiratory health and digestive wellness. Apamarg supports natural cleansing of the airways, helps manage cough and bronchial discomfort, and aids in healthy digestion. This versatile herb has been used for centuries to promote overall detoxification and immune strength.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 4,
+      "name": "Arjuna Chal",
+      "emoji": "🌿",
+      "image": "arjuna-chal.jpg",
+      "category": "herbs",
+      "description": "Ayurveda's premier heart tonic – Arjuna bark strengthens cardiac function and supports healthy circulation. This powerful herb helps maintain optimal blood pressure, promotes cardiovascular endurance, and supports the heart muscle. Traditionally used for its cardioprotective properties, Arjuna is essential for those seeking natural heart health support.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 5,
+      "name": "Ashwaganda",
+      "emoji": "🌿",
+      "image": "ashwaganda.jpg",
+      "category": "herbs",
+      "description": "The ultimate adaptogen for modern stress – Ashwagandha helps your body cope with physical and mental stress while boosting energy levels. This ancient root reduces anxiety, improves sleep quality, enhances stamina, and supports cognitive function. Experience balanced energy, better focus, and improved resilience with nature's stress-busting solution.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 6,
+      "name": "Asuro",
+      "emoji": "🌿",
+      "image": "asuro.jpg",
+      "category": "herbs",
+      "description": "A traditional Ayurvedic herb valued for its respiratory and digestive supporting properties. Asuro has been used in folk medicine to help clear airways, support breathing comfort, and promote healthy digestion. This herb is part of traditional formulations for maintaining overall wellness and vitality.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 7,
+      "name": "Barro",
+      "emoji": "🌿",
+      "image": "barro.jpg",
+      "category": "herbs",
+      "description": "A traditional medicinal herb known for its digestive and anti-inflammatory properties. Barro supports gut health, helps soothe digestive discomfort, and promotes natural healing processes in the body. Used in traditional remedies for maintaining overall digestive wellness.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 8,
+      "name": "Barun Chal",
+      "emoji": "🌿",
+      "image": "barun-chal.jpg",
+      "category": "herbs",
+      "description": "Sourced from the Crataeva nurvala tree, Barun Chal is traditionally used in Ayurveda for urinary and kidney health support. This bark helps maintain healthy bladder function, supports proper urine flow, and has been used traditionally for renal wellness. A trusted herb for urinary tract health.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 9,
+      "name": "Belgiri",
+      "emoji": "🌿",
+      "image": "belgiri.jpg",
+      "category": "herbs",
+      "description": "The sacred Bael fruit is a powerful digestive aid that soothes stomach ailments and supports gut health. Rich in therapeutic compounds, Belgiri helps relieve diarrhea, dysentery, and digestive ulcers while boosting immunity. This fruit is particularly effective for all digestive complaints and is known as nature's gift for gastrointestinal wellness.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 10,
+      "name": "Bharmi",
+      "emoji": "🌿",
+      "image": "bharmi.jpg",
+      "category": "herbs",
+      "description": "Nature's brain booster – Brahmi (Bacopa monnieri) enhances memory, concentration, and cognitive performance. This revered nootropic herb supports learning ability, reduces anxiety, and promotes mental clarity. Used for centuries by Ayurvedic practitioners for brain health, Brahmi helps you stay sharp, focused, and mentally agile throughout the day.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 11,
+      "name": "Bhilawa",
+      "emoji": "🌿",
+      "image": "bhilawa.jpg",
+      "category": "herbs",
+      "description": "A traditional Ayurvedic herb with multiple therapeutic applications. Bhilawa (Marking nut tree) has been used traditionally for its digestive supportive properties and in certain topical applications. This herb should be used under guidance due to its potency.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 12,
+      "name": "Bhojo",
+      "emoji": "🌿",
+      "image": "bhojo.jpg",
+      "category": "herbs",
+      "description": "A lesser-known but valuable Ayurvedic herb used in traditional medicine systems. Bhojo supports various bodily functions and has been incorporated into traditional health formulations for its unique therapeutic properties.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 13,
+      "name": "Bringraj",
+      "emoji": "🌿",
+      "image": "bringraj.jpg",
+      "category": "herbs",
+      "description": "The king of herbs for hair health – Bringraj (Eclipta alba) promotes hair growth, prevents premature graying, and strengthens hair from root to tip. Beyond beauty, this incredible herb supports liver function, promotes healthy vision, and acts as a powerful body rejuvenator. Your go-to solution for lustrous hair and internal detoxification.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 14,
+      "name": "Cheer Pine Behroza",
+      "emoji": "🌿",
+      "image": "cheer-pine-behroza.jpg",
+      "category": "herbs",
+      "description": "A traditional resinous substance valued in Ayurvedic medicine for its warming and therapeutic properties. Cheer Pine Behroza has been used in traditional formulations for respiratory support and external applications. This aromatic resin adds both therapeutic value and pleasant fragrance to herbal preparations.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 15,
+      "name": "Chirata",
+      "emoji": "🌿",
+      "image": "chirata.jpg",
+      "category": "herbs",
+      "description": "The bitter herb with sweet benefits – Chirata (Swertia chirata) is a powerful liver tonic and digestive stimulant. This Himalayan herb supports liver detoxification, stimulates bile production, aids fat metabolism, and helps maintain healthy blood sugar levels. Perfect for those seeking natural liver support and enhanced digestion.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 16,
+      "name": "Chitrak",
+      "emoji": "🌿",
+      "image": "chitrak.jpg",
+      "category": "herbs",
+      "description": "A dynamic Ayurvedic herb known for its digestive and metabolic enhancing properties. Chirata (Plumbago zeylanica) supports healthy digestion, aids nutrient absorption, and helps metabolism. Traditionally used to kindle digestive fire (agni) and support healthy weight management when combined with proper diet.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 17,
+      "name": "Chooti Harad",
+      "emoji": "🌿",
+      "image": "chooti-harad.jpg",
+      "category": "herbs",
+      "description": "The gentle form of Haritaki – Chooti Harad (small Terminalia chebula) offers milder digestive support suitable for regular use. It promotes healthy bowel movements, supports detoxification, and aids gentle colon cleansing. Ideal for daily digestive maintenance without harsh effects.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 18,
+      "name": "Dhataki",
+      "emoji": "🌿",
+      "image": "dhataki.jpg",
+      "category": "herbs",
+      "description": "A flowering shrub whose flowers are prized in Ayurvedic fermentations and traditional medicine. Dhataki (Woodfordia fruticosa) is essential for preparing traditional herbal wines (arishtas) and has natural fermenting properties. It also supports skin health and has been used in various cosmetic preparations.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 19,
+      "name": "Giloy",
+      "emoji": "🌿",
+      "image": "giloy.jpg",
+      "category": "herbs",
+      "description": "Nature's immunity shield – Giloy (Guduchi/Tinospora cordifolia) is a powerful immunomodulator that strengthens your body's defense system. This miraculous herb fights infections, reduces chronic fever, detoxifies blood, and manages blood sugar levels. Called 'Amrita' (the root of immortality) in Ayurveda, Giloy is your daily dose of natural protection.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 20,
+      "name": "Gokharu",
+      "emoji": "🌿",
+      "image": "gokharu.jpg",
+      "category": "herbs",
+      "description": "The men's wellness herb – Gokharu (Tribulus terrestris) supports kidney and urinary tract health while boosting vitality and stamina. This powerful herb enhances athletic performance, supports reproductive wellness, and helps maintain healthy hormone levels. Trusted by athletes and wellness seekers alike for natural strength enhancement.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 21,
+      "name": "Gudmar",
+      "emoji": "🌿",
+      "image": "gudmar.jpg",
+      "category": "herbs",
+      "description": "The sugar destroyer – Gurmar (Gymnema sylvestre) literally means 'sugar killer' in Hindi. This remarkable herb helps maintain healthy blood sugar levels, reduces sugar cravings, and supports pancreatic health. An essential addition to your wellness routine if you're looking to manage sugar intake naturally and support metabolic health.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 22,
+      "name": "Guggle",
+      "emoji": "🌿",
+      "image": "guggle.jpg",
+      "category": "herbs",
+      "description": "Ancient solution for modern cholesterol concerns – Guggul (Commiphora mukul) supports healthy cholesterol levels and joint mobility. This precious resin has powerful anti-inflammatory properties that ease arthritis pain, supports thyroid function, and promotes clear, healthy skin. A time-tested remedy for metabolic and inflammatory conditions.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 23,
+      "name": "Harro Powder",
+      "emoji": "🌿",
+      "image": "harro-powder.jpg",
+      "category": "herbs",
+      "description": "Ayurveda's cleanser – Haritaki (Terminalia chebula) is called the 'king of medicines' in Tibetan tradition. This remarkable fruit supports complete digestive detoxification, boosts immunity, promotes healthy elimination, and rejuvenates tissues. One of the three fruits in Triphala, Haritaki is essential for maintaining digestive fire and body cleanliness.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 24,
+      "name": "Indrajau",
+      "emoji": "🌿",
+      "image": "indrajau.jpg",
+      "category": "herbs",
+      "description": "A traditional Ayurvedic herb with significant antiprotozoal and digestive supporting properties. Indrajau (Wrightia tinctoria) has been used traditionally for gut health and managing parasitic infections. This herb supports digestive wellness and has been valued in traditional medicine systems.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 25,
+      "name": "Jaivitri",
+      "emoji": "🌿",
+      "image": "jaivitri.jpg",
+      "category": "herbs",
+      "description": "The fragrant spice with therapeutic benefits – Jaivitri (Mace) is the aromatic sister of nutmeg with impressive health properties. It supports digestive health, improves appetite, aids sleep, and has antioxidant properties. This luxurious spice adds both exquisite flavor and wellness benefits to your culinary and medicinal preparations.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 26,
+      "name": "Jethimadhu",
+      "emoji": "🌿",
+      "image": "jethimadhu.jpg",
+      "category": "herbs",
+      "description": "The sweet healer – Licorice root (Mulethi/Jethimadhu) soothes sore throats, calms coughs, and supports respiratory health naturally. This adaptogenic herb boosts immunity, aids digestion, reduces inflammation, and provides relief from gastric discomfort. Its natural sweetness makes it a delightful addition to any herbal tea or wellness formulation.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 27,
+      "name": "Kachur",
+      "emoji": "🌿",
+      "image": "kachur.jpg",
+      "category": "herbs",
+      "description": "An aromatic rhizome with digestive and anti-inflammatory benefits. Kachur (Curcuma zedoaria) supports healthy digestion, reduces bloating, and has been used traditionally for respiratory wellness. This relative of turmeric adds both flavor and therapeutic value to your herbal collection.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 28,
+      "name": "Kali Musli",
+      "emoji": "🌿",
+      "image": "kali-musli.jpg",
+      "category": "herbs",
+      "description": "The vitality herb – Kali Musli (Curculigo orchioides) is a powerful adaptogen that enhances energy, strength, and stamina. Traditionally used to combat fatigue, boost physical performance, and support male reproductive health. This dark variety of musli is prized for its rejuvenating and revitalizing properties.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 29,
+      "name": "Kalijeera",
+      "emoji": "🌿",
+      "image": "kalijeera.jpg",
+      "category": "herbs",
+      "description": "Black cumin's cousin – Kalijeera (Nigella sativa var.) shares many benefits with the famous black seed oil. These tiny seeds pack powerful antioxidants, support immune function, aid digestion, and have been traditionally used for respiratory health. A nutritional powerhouse in miniature form.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 30,
+      "name": "Kanchanar Chal",
+      "emoji": "🌿",
+      "image": "kanchanar-chal.jpg",
+      "category": "herbs",
+      "description": "The glandular health herb – Kanchanar (Bauhinia variegata) bark supports healthy thyroid function and lymphatic drainage. This Ayurvedic herb helps maintain glandular balance, supports healthy metabolism, and has been traditionally used for goiter and lymph node health. Essential for endocrine system wellness.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 31,
+      "name": "Kantakari",
+      "emoji": "🌿",
+      "image": "kantakari.jpg",
+      "category": "herbs",
+      "description": "Respiratory relief herb – Kantakari (Solanum xanthocarpum) supports lung health and breathing comfort. This thorny herb has been used in Ayurveda to clear airways, ease coughs, and support respiratory function. A key ingredient in traditional cough syrups and respiratory formulations.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 32,
+      "name": "Kuchila",
+      "emoji": "🌿",
+      "image": "kuchila.jpg",
+      "category": "herbs",
+      "description": "A potent herb requiring careful use – Kuchila (Strychnos nux-vomica) has been used in highly diluted forms in traditional medicine for digestive and nervous system support. Due to its potency, this herb should only be used under expert guidance in prepared formulations.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 33,
+      "name": "Lothsalla Himalayan Yew",
+      "emoji": "🌿",
+      "image": "Lothsalla-himalayan-yew.jpg",
+      "category": "herbs",
+      "description": "The rare Himalayan treasure – Lothsalla (Taxus wallichiana) is a precious medicinal plant from the Himalayan region. This evergreen has been studied for its unique phytochemical compounds and traditional uses. A rare addition for collectors of authentic Himalayan medicinal plants.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 34,
+      "name": "Majistha",
+      "emoji": "🌿",
+      "image": "majistha.jpg",
+      "category": "herbs",
+      "description": "The blood purifier – Majistha (Rubia cordifolia) is Ayurveda's premier herb for skin health and blood purification. This climbing herb clears toxins from the blood, improves complexion, treats acne and pimples, and supports kidney and bladder health. For radiant skin from within, trust this time-honored blood cleanser.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 35,
+      "name": "Moringa Leaves Dried",
+      "emoji": "🌿",
+      "image": "moringa-leaves-dried.jpg",
+      "category": "herbs",
+      "description": "Nature's multivitamin – Moringa leaves contain 92 nutrients, 46 antioxidants, and all essential amino acids. This miracle tree's leaves fight inflammation, boost energy, support brain health, lower blood sugar, and provide complete nutrition. Dried for convenience while preserving maximum nutrition – the easiest way to supercharge your diet.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 36,
+      "name": "Nagarmotha",
+      "emoji": "🌿",
+      "image": "nagarmotha.jpg",
+      "category": "herbs",
+      "description": "The digestive warrior – Nagarmotha (Cyperus rotundus) supports healthy digestion, reduces bloating, and promotes nutrient absorption. This underground stem has powerful anti-inflammatory properties, supports menstrual health, and aids in fever management. A must-have for digestive wellness and women's health.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 37,
+      "name": "Neem",
+      "emoji": "🌿",
+      "image": "neem.jpg",
+      "category": "herbs",
+      "description": "Nature's pharmacy – Neem (Azadirachta indica) is called 'the village pharmacy' for good reason. This incredible tree supports skin health, purifies blood, boosts immunity, promotes oral health, and fights infections naturally. From clearing acne to strengthening gums, Neem does it all – your complete natural wellness solution.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 38,
+      "name": "Nirgundi",
+      "emoji": "🌿",
+      "image": "nirgundi.jpg",
+      "category": "herbs",
+      "description": "The pain-relieving herb – Nirgundi (Vitex negundo) has powerful analgesic and anti-inflammatory properties. This aromatic herb eases joint pain, reduces swelling, relieves headaches, and supports respiratory health. Traditionally used in poultices and oils for pain relief, Nirgundi is your natural alternative for managing aches and discomfort.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 39,
+      "name": "Nisodh",
+      "emoji": "🌿",
+      "image": "nisodh.jpg",
+      "category": "herbs",
+      "description": "A traditional Ayurvedic herb used for its febrifuge and digestive properties. Nisodh has been employed in folk medicine to reduce fever, support healthy digestion, and promote overall wellness. Part of traditional pharmacopeia for maintaining constitutional balance.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 40,
+      "name": "Pakhanved",
+      "emoji": "🌿",
+      "image": "pakhanved.jpg",
+      "category": "herbs",
+      "description": "The bone and joint supporter – Pakhanved (Bryophyllum pinnatum) has been traditionally used for supporting bone health, healing fractures faster, and reducing joint inflammation. This succulent herb also supports kidney stone dissolution and has diuretic properties. A valuable addition to musculoskeletal wellness routines.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 41,
+      "name": "Punanarva",
+      "emoji": "🌿",
+      "image": "punanarva.jpg",
+      "category": "herbs",
+      "description": "The kidney care herb – Punarnava (Boerhavia diffusa) literally means 'renewer of life' in Sanskrit. This remarkable herb supports kidney function, reduces edema (water retention), supports liver health, and has powerful rejuvenating properties. Essential for those seeking natural kidney and urinary tract support.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 42,
+      "name": "Ral Safed",
+      "emoji": "🌿",
+      "image": "ral-safed.jpg",
+      "category": "herbs",
+      "description": "Pure white resin with traditional therapeutic applications. Ral Safed (White Pine Resin) has been used in Ayurvedic preparations for its antimicrobial properties and pleasant aroma. This resin supports respiratory health when used in inhalation and has traditional uses in skin care formulations.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 43,
+      "name": "Rittha",
+      "emoji": "🌿",
+      "image": "rittha.jpg",
+      "category": "herbs",
+      "description": "The gentle cleanser – Rittha (Soapnut/ Sapindus) is nature's detergent with internal cleansing properties. When consumed appropriately, it supports digestive detoxification and has mild laxative effects. Externally, it's famous for hair and skin cleaning. A versatile herb for both internal and external purification.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 44,
+      "name": "Safed Musli",
+      "emoji": "🌿",
+      "image": "safed-musli.jpg",
+      "category": "herbs",
+      "description": "The white gold of Ayurveda – Safed Musli (Chlorophytum borivilianum) is a premium herb for strength, vitality, and vigor. This powerful adaptogen enhances physical performance, builds muscle strength, combats fatigue, and supports reproductive wellness. Cherished by athletes and those seeking natural energy enhancement.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 45,
+      "name": "Sankhapuspi",
+      "emoji": "🌿",
+      "image": "sankhapuspi.jpg",
+      "category": "herbs",
+      "description": "The mind-calming herb – Sankhapuspi (Convolvulus pluricaulis) is Ayurveda's answer to stress, anxiety, and memory issues. This beautiful flowering herb enhances memory, promotes tranquility, supports restful sleep, and improves cognitive function. Find your mental peace and clarity with this brain-nourishing flower.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 46,
+      "name": "Sarpaganda",
+      "emoji": "🌿",
+      "image": "sarpaganda.jpg",
+      "category": "herbs",
+      "description": "Nature's blood pressure manager – Sarpaganda (Rauvolfia serpentina) has been extensively studied for its antihypertensive properties. This herb helps maintain healthy blood pressure, promotes calmness, and supports cardiovascular wellness. One of the most important contributions of Ayurveda to modern medicine – use responsibly under guidance.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 47,
+      "name": "Sennaleaves",
+      "emoji": "🌿",
+      "image": "SennaLeaves.jpg",
+      "category": "herbs",
+      "description": "Gentle digestive cleanse – Senna leaves provide reliable, natural relief from occasional constipation and support digestive detoxification. This FDA-approved herbal laxative stimulates bowel movements gently, clears the colon before procedures, and supports the body's natural elimination process. Perfect for occasional digestive reset.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 48,
+      "name": "Shikakai",
+      "emoji": "🌿",
+      "image": "shikakai.jpg",
+      "category": "herbs",
+      "description": "Hair's best friend – Shikakai (Acacia concinna) is nature's complete hair care solution. This fruit pod cleanses scalp without stripping natural oils, strengthens hair roots, prevents dandruff, adds shine, and promotes growth. Ditch chemical shampoos for this 100% natural cleanser that has beautified Indian hair for centuries.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 49,
+      "name": "Sonth Dried Ginger",
+      "emoji": "🌿",
+      "image": "sonth-dried-ginger.jpg",
+      "category": "herbs",
+      "description": "Digestive fire starter – Sonth (Zingiber officinale) dried ginger is the go-to remedy for indigestion, bloating, and nausea. This warming spice boosts metabolism, supports respiratory health, reduces inflammation, and enhances absorption of other herbs. Keep Sonth handy for instant digestive relief and immune support year-round.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 50,
+      "name": "Stinging Nettle Sisno",
+      "emoji": "🌿",
+      "image": "stinging-nettle-sisno.jpg",
+      "category": "herbs",
+      "description": "Nutritional powerhouse – Stinging Nettle (Urtica dioica) is packed with vitamins, minerals, and beneficial compounds. This versatile herb supports prostate health, reduces allergies, builds strong bones, and detoxifies the body. Don't let the name fool you – dried nettle is incredibly nutritious and safe to consume.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 51,
+      "name": "Sugandhawal",
+      "emoji": "🌿",
+      "image": "sugandhawal.jpg",
+      "category": "herbs",
+      "description": "The aromatic nervine – Sugandhawal (Valeriana jatamansi) is a fragrant herb traditionally used for nervous system support. This Himalayan herb promotes relaxation, supports restful sleep, reduces anxiety, and has mood-elevating properties. Experience calm and tranquility with this beautifully scented Ayurvedic gem.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 52,
+      "name": "Talispatra",
+      "emoji": "🌿",
+      "image": "talispatra.jpg",
+      "category": "herbs",
+      "description": "The respiratory herb – Talispatra (Abies webbiana) supports lung health and clear breathing. This Himalayan fir tree leaf has expectorant properties that help clear congestion, soothe coughs, and support respiratory function. A key ingredient in traditional asthma and bronchitis formulations.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 53,
+      "name": "Triphala Powder",
+      "emoji": "🌿",
+      "image": "triphala-powder.jpg",
+      "category": "herbs",
+      "description": "Ayurveda's most famous formula – Triphala combines three myrobalans (Amla, Bibhitaki, Haritaki) for complete digestive and body rejuvenation. This timeless formula supports healthy digestion, gentle detoxification, nutrient absorption, eye health, and cellular rejuvenation. The cornerstone of Ayurvedic daily wellness – simple yet profound.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 54,
+      "name": "Tulsi",
+      "emoji": "🌿",
+      "image": "tulsi.jpg",
+      "category": "herbs",
+      "description": "The Queen of Herbs – Tulsi (Holy Basil) is sacred in India and revered worldwide for its extraordinary health benefits. This adaptogenic herb boosts immunity, combats stress, balances hormones, supports respiratory health, and protects against environmental toxins. Keep Tulsi in your home for holistic protection and spiritual upliftment.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 55,
+      "name": "Wild Asparagus",
+      "emoji": "🌿",
+      "image": "wild-asparagus.jpg",
+      "category": "herbs",
+      "description": "The women's wellness herb – Shatavari (Asparagus racemosus) is nature's gift to female health. This rejuvenating tonic supports reproductive wellness, balances hormones, enhances fertility, eases menopausal symptoms, and boosts lactation. Though named Wild Asparagus here, this herb is the ultimate female vitality booster in Ayurveda.",
+      "price": 12.99,
+      "comparePrice": 16.99,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "1 Kg",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.3,
+        "500g": 0.6,
+        "1 Kg": 1
+      },
+      "video": "/videos/organic-tulsi-holy-basil.mp4",
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 56,
+      "name": "Bhir Maha Wild Honey",
+      "emoji": "✨",
+      "image": "bhir-maha-wild-honey.jpg",
+      "category": "resin",
+      "description": "Pure wilderness in every drop – Bhir Maha (Wild Forest) Honey is harvested from the remote Himalayan forests where wild bees pollinate diverse medicinal flowers. Raw, unprocessed, and unpasteurized, this honey retains all its natural enzymes, antioxidants, pollen, and beneficial compounds. Each jar carries the unique terroir of Nepal's pristine forests – supporting immunity, soothing throats, healing wounds, and delivering nature's purest sweetness.",
+      "price": 37.49,
+      "comparePrice": 50.6,
+      "rating": 4.5,
+      "reviews": 45,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "25g",
+        "50g",
+        "100g",
+        "250g",
+        "500g"
+      ],
+      "priceMultiplier": {
+        "25g": 0.3,
+        "50g": 0.55,
+        "100g": 1,
+        "250g": 2.2,
+        "500g": 4.0
+      },
+      "video": "/videos/bhir-maha-wild-honey.mp4",
+      "forms": [
+        "Raw Resin"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 57,
+      "name": "Local Honey",
+      "emoji": "✨",
+      "image": "local-honey.jpg",
+      "category": "resin",
+      "description": "Community-sourced sweetness – Our Local Honey comes from small-scale beekeepers practicing sustainable apiculture in rural communities. Raw and minimally filtered, it preserves regional floral characteristics, natural pollen, and beneficial enzymes lost in commercial honey. By choosing local honey, you support community livelihoods, enjoy traceable quality, and receive all of honey's natural antibacterial, anti-inflammatory, and immune-boosting benefits intact.",
+      "price": 42.99,
+      "comparePrice": 54.16,
+      "rating": 4.5,
+      "reviews": 367,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "25g",
+        "50g",
+        "100g",
+        "250g",
+        "500g"
+      ],
+      "priceMultiplier": {
+        "25g": 0.3,
+        "50g": 0.55,
+        "100g": 1,
+        "250g": 2.2,
+        "500g": 4.0
+      },
+      "video": "/videos/local-honey.mp4",
+      "forms": [
+        "Raw Resin"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 58,
+      "name": "Pure Cow Milk",
+      "emoji": "✨",
+      "image": "pure-cow-milk.jpg",
+      "category": "resin",
+      "description": "Farm-fresh purity – Our Pure Cow Milk comes from healthy grass-fed cattle raised without antibiotics or growth hormones. Rich in calcium, protein, vitamin D, and beneficial fats, this milk supports strong bones, muscle growth, and overall nutrition. Sourced from ethical farms where cows graze naturally, each glass delivers wholesome nutrition the way nature intended – pure, fresh, and full of life-giving goodness.",
+      "price": 15.99,
+      "comparePrice": 21.1,
+      "rating": 4.8,
+      "reviews": 312,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "25g",
+        "50g",
+        "100g",
+        "250g",
+        "500g"
+      ],
+      "priceMultiplier": {
+        "25g": 0.3,
+        "50g": 0.55,
+        "100g": 1,
+        "250g": 2.2,
+        "500g": 4.0
+      },
+      "video": "/videos/pure-cow-milk.mp4",
+      "forms": [
+        "Raw Resin"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 59,
+      "name": "Shilajit",
+      "emoji": "✨",
+      "image": "shilajit.jpg",
+      "category": "resin",
+      "description": "Himalaya's gift of strength – Shilajit is a mineral-rich resin seeping from Himalayan rock layers over centuries, forming one of Ayurveda's most powerful rasayanas (rejuvenatives). Packed with fulvic acid, minerals, and bioactive compounds, Shilajit boosts testosterone, enhances stamina and energy, supports cognitive function, aids nutrient absorption, and promotes recovery. The ultimate supplement for those seeking peak physical and mental performance naturally.",
+      "price": 46.49,
+      "comparePrice": 61.82,
+      "rating": 4.5,
+      "reviews": 367,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "25g",
+        "50g",
+        "100g",
+        "250g",
+        "500g"
+      ],
+      "priceMultiplier": {
+        "25g": 0.3,
+        "50g": 0.55,
+        "100g": 1,
+        "250g": 2.2,
+        "500g": 4.0
+      },
+      "video": "/videos/shilajit.mp4",
+      "forms": [
+        "Raw Resin"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true
+    },
+    {
+      "id": 60,
+      "name": "Amrit Dhara",
+      "emoji": "🫒",
+      "image": "amrit-dhara.jpg",
+      "category": "oils",
+      "description": "The nectar of wellness – Amrit Dhara is a traditional Ayurvedic medicated oil blend formulated for multi-purpose therapeutic use. This aromatic oil combination supports joint health, relieves muscular pain, warms the body during cold seasons, and promotes circulation when used for massage. A household staple in Nepali homes, Amrit Dhara represents generations of trusted natural healing wisdom in one versatile bottle.",
+      "price": 14.49,
+      "comparePrice": 18.69,
+      "rating": 4.4,
+      "reviews": 89,
+      "defaultWeight": "250ml",
+      "unitType": "volume",
+      "featured": true,
+      "weights": [
+        "100ml",
+        "250ml",
+        "500ml",
+        "1 Ltr",
+        "5 Ltr"
+      ],
+      "priceMultiplier": {
+        "100ml": 0.45,
+        "250ml": 1,
+        "500g": 1.75,
+        "1 Ltr": 3.2,
+        "5 Ltr": 14.0
+      },
+      "video": "/videos/amrit-dhara.mp4",
+      "forms": [
+        "Liquid"
+      ],
+      "defaultForm": "liquid",
+      "showFormSelector": false
+    },
+    {
+      "id": 61,
+      "name": "Bhuteko Mustard Oil",
+      "emoji": "🫒",
+      "image": "bhuteko-mustard-oil.jpg",
+      "category": "oils",
+      "description": "Authentic Kachi Ghani purity – Our Bhuteko (Crushed) Mustard Oil is extracted using traditional cold-press methods that preserve all its natural goodness. Rich in monounsaturated fats, omega-3 fatty acids, and antioxidants, this oil supports heart health when cooked with, and promotes hair growth, improves scalp circulation, and nourishes skin when applied topically. The pungent aroma and golden color mark its unmatched authenticity.",
+      "price": 22.49,
+      "comparePrice": 28.11,
+      "rating": 5.0,
+      "reviews": 189,
+      "defaultWeight": "250ml",
+      "unitType": "volume",
+      "featured": true,
+      "weights": [
+        "100ml",
+        "250ml",
+        "500ml",
+        "1 Ltr",
+        "5 Ltr"
+      ],
+      "priceMultiplier": {
+        "100ml": 0.45,
+        "250ml": 1,
+        "500g": 1.75,
+        "1 Ltr": 3.2,
+        "5 Ltr": 14.0
+      },
+      "video": "/videos/bhuteko-mustard-oil.mp4",
+      "forms": [
+        "Liquid"
+      ],
+      "defaultForm": "liquid",
+      "showFormSelector": false
+    },
+    {
+      "id": 62,
+      "name": "Coconut Oil",
+      "emoji": "🫒",
+      "image": "coconut-oil.jpg",
+      "category": "oils",
+      "description": "Nature's most versatile elixir – Cold-pressed Coconut Oil is a kitchen essential and beauty powerhouse rolled into one. Perfect for high-heat cooking, this oil contains healthy MCTs that boost metabolism and energy. Externally, it deep conditions hair, moisturizes skin, removes makeup gently, and acts as a natural sunscreen. From stir-fries to oil pulling, coconut oil serves countless purposes in your natural lifestyle.",
+      "price": 10.49,
+      "comparePrice": 12.69,
+      "rating": 4.5,
+      "reviews": 45,
+      "defaultWeight": "250ml",
+      "unitType": "volume",
+      "featured": true,
+      "weights": [
+        "100ml",
+        "250ml",
+        "500ml",
+        "1 Ltr",
+        "5 Ltr"
+      ],
+      "priceMultiplier": {
+        "100ml": 0.45,
+        "250ml": 1,
+        "500g": 1.75,
+        "1 Ltr": 3.2,
+        "5 Ltr": 14.0
+      },
+      "video": "/videos/coconut-oil.mp4",
+      "forms": [
+        "Liquid"
+      ],
+      "defaultForm": "liquid",
+      "showFormSelector": false
+    },
+    {
+      "id": 63,
+      "name": "Infuse Aloevera Oil",
+      "emoji": "🫒",
+      "image": "infuse-aloevera-oil.jpg",
+      "category": "oils",
+      "description": "Soothing hydration in every drop – Our Aloe Vera Infused Oil captures the healing essence of fresh aloe leaves in a nourishing carrier oil base. This lightweight oil absorbs quickly, delivering aloe's vitamins, enzymes, and amino acids deep into skin and hair. Use it to soothe sunburns, hydrate dry skin, condition damaged hair, reduce inflammation, and promote healing of minor cuts and irritations. Pure plant-powered moisture.",
+      "price": 28.49,
+      "comparePrice": 39.03,
+      "rating": 4.7,
+      "reviews": 89,
+      "defaultWeight": "250ml",
+      "unitType": "volume",
+      "featured": false,
+      "weights": [
+        "100ml",
+        "250ml",
+        "500ml",
+        "1 Ltr",
+        "5 Ltr"
+      ],
+      "priceMultiplier": {
+        "100ml": 0.45,
+        "250ml": 1,
+        "500g": 1.75,
+        "1 Ltr": 3.2,
+        "5 Ltr": 14.0
+      },
+      "video": "/videos/infuse-aloevera-oil.mp4",
+      "forms": [
+        "Liquid"
+      ],
+      "defaultForm": "liquid",
+      "showFormSelector": false
+    },
+    {
+      "id": 64,
+      "name": "Infused Amla Oil",
+      "emoji": "🫒",
+      "image": "infused-amla-oil.jpg",
+      "category": "oils",
+      "description": "Hair's best friend from within – Amla Infused Oil combines the world's richest vitamin C source with penetrating carrier oils for maximum hair nutrition. Regular application strengthens hair follicles, prevents premature graying, stimulates new growth, reduces dandruff, and adds incredible shine. This traditional Ayurvedic hair tonic has beautified Indian hair for millennia – now available in an easy-to-use infused oil format.",
+      "price": 15.49,
+      "comparePrice": 20.29,
+      "rating": 4.4,
+      "reviews": 156,
+      "defaultWeight": "250ml",
+      "unitType": "volume",
+      "featured": false,
+      "weights": [
+        "100ml",
+        "250ml",
+        "500ml",
+        "1 Ltr",
+        "5 Ltr"
+      ],
+      "priceMultiplier": {
+        "100ml": 0.45,
+        "250ml": 1,
+        "500g": 1.75,
+        "1 Ltr": 3.2,
+        "5 Ltr": 14.0
+      },
+      "video": "/videos/infused-amla-oil.mp4",
+      "forms": [
+        "Liquid"
+      ],
+      "defaultForm": "liquid",
+      "showFormSelector": false
+    },
+    {
+      "id": 65,
+      "name": "Mustard Oil",
+      "emoji": "🫒",
+      "image": "mustard-oil.jpg",
+      "category": "oils",
+      "description": "Sarson ka tel – the heart of Indian cooking – Pure mustard oil brings authentic flavor and numerous health benefits to your kitchen. With ideal omega-3 to omega-6 ratio, it supports cardiovascular health, has natural antimicrobial properties, and aids digestion. Beyond cooking, it's prized for baby massages, hair treatments, and relieving coughs when warmed. Its distinctive pungency marks genuine quality and traditional extraction.",
+      "price": 17.99,
+      "comparePrice": 24.46,
+      "rating": 4.4,
+      "reviews": 156,
+      "defaultWeight": "250ml",
+      "unitType": "volume",
+      "featured": false,
+      "weights": [
+        "100ml",
+        "250ml",
+        "500ml",
+        "1 Ltr",
+        "5 Ltr"
+      ],
+      "priceMultiplier": {
+        "100ml": 0.45,
+        "250ml": 1,
+        "500g": 1.75,
+        "1 Ltr": 3.2,
+        "5 Ltr": 14.0
+      },
+      "video": "/videos/mustard-oil.mp4",
+      "forms": [
+        "Liquid"
+      ],
+      "defaultForm": "liquid",
+      "showFormSelector": false
+    },
+    {
+      "id": 66,
+      "name": "Timur Oil",
+      "emoji": "🫒",
+      "image": "timur-oil.jpg",
+      "category": "oils",
+      "description": "Himalayan spice sensation – Timur (Sichuan Pepper) Oil captures the unique numbing citrusy spice of Nepal's mountain pepper in versatile oil form. Known for stimulating digestion, relieving bloating and gas, and supporting oral health, Timur oil adds exotic flavor to cuisines while offering therapeutic benefits. Its warming properties make it excellent for massage during cold weather, improving local circulation and easing muscular discomfort.",
+      "price": 13.49,
+      "comparePrice": 17.13,
+      "rating": 4.7,
+      "reviews": 123,
+      "defaultWeight": "250ml",
+      "unitType": "volume",
+      "featured": false,
+      "weights": [
+        "100ml",
+        "250ml",
+        "500ml",
+        "1 Ltr",
+        "5 Ltr"
+      ],
+      "priceMultiplier": {
+        "100ml": 0.45,
+        "250ml": 1,
+        "500g": 1.75,
+        "1 Ltr": 3.2,
+        "5 Ltr": 14.0
+      },
+      "video": "/videos/timur-oil.mp4",
+      "forms": [
+        "Liquid"
+      ],
+      "defaultForm": "liquid",
+      "showFormSelector": false
+    },
+    {
+      "id": 67,
+      "name": "Titepati Oil Artemisia",
+      "emoji": "🫒",
+      "image": "titepati-oil-Artemisia.jpg",
+      "category": "oils",
+      "description": "Mountain medicine in oil form – Titepati (Wormwood/Artemisia) Oil distills the potent medicinal properties of this revered Himalayan herb. Traditionally used for its digestive stimulant, anti-parasitic, and fever-reducing properties, this aromatic oil supports gut health and overall wellness. When applied topically, it may help relieve joint pain and inflammation. A rare specialty oil connecting you to ancient Himalayan healing traditions.",
+      "price": 8.99,
+      "comparePrice": 12.4,
+      "rating": 4.7,
+      "reviews": 156,
+      "defaultWeight": "250ml",
+      "unitType": "volume",
+      "featured": false,
+      "weights": [
+        "100ml",
+        "250ml",
+        "500ml",
+        "1 Ltr",
+        "5 Ltr"
+      ],
+      "priceMultiplier": {
+        "100ml": 0.45,
+        "250ml": 1,
+        "500g": 1.75,
+        "1 Ltr": 3.2,
+        "5 Ltr": 14.0
+      },
+      "video": "/videos/titepati-oil-Artemisia.mp4",
+      "forms": [
+        "Liquid"
+      ],
+      "defaultForm": "liquid",
+      "showFormSelector": false
+    },
+    {
+      "id": 68,
+      "name": "Basil Seed",
+      "emoji": "🫘",
+      "image": "basil-seed.jpg",
+      "category": "seeds",
+      "description": "Nature's cooling superfood – Basil Seeds (Sabja/Sweet Basil) are the perfect summer remedy, swelling up to 10 times their size when soaked to create a refreshing, fiber-rich drink base. Packed with omega-3 fats, antioxidants, and cooling properties per Ayurveda, they aid weight loss, regulate blood sugar, improve digestion, and keep you hydrated. Add to lemonade, smoothies, or falooda for instant refreshment and nutrition.",
+      "price": 4.99,
+      "comparePrice": 6.49,
+      "rating": 4.6,
+      "reviews": 156,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/basil-seed.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 69,
+      "name": "Black Sesami Kala Til",
+      "emoji": "🫘",
+      "image": "black-sesami-kala-til.jpg",
+      "category": "seeds",
+      "description": "Nutritional powerhouse in tiny seeds – Black Sesame seeds (Kala Til) are one of the oldest oilseeds known to humanity, packed with calcium, iron, magnesium, and healthy fats. These nutty seeds support bone density, improve heart health, balance hormones with natural phytoestrogens, and promote healthy skin and hair with their rich vitamin E content. Roast, sprinkle, or press for oil – black sesame adds both nutrition and rich flavor.",
+      "price": 5.99,
+      "comparePrice": 7.91,
+      "rating": 4.3,
+      "reviews": 278,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/black-sesami-kala-til.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 70,
+      "name": "Chia Seed",
+      "emoji": "🫘",
+      "image": "chia-seed.jpg",
+      "category": "seeds",
+      "description": "The modern superfood ancient civilizations cherished – Chia seeds deliver massive nutrition in miniature form: omega-3 fatty acids, complete protein, fiber, calcium, and antioxidants. Just 2 tablespoons provide sustained energy, aid weight loss by promoting fullness, support heart health, stabilize blood sugar, and improve digestive regularity. These tasteless wonder-seeds can be added to any dish for an instant nutritional upgrade.",
+      "price": 6.99,
+      "comparePrice": 9.37,
+      "rating": 4.3,
+      "reviews": 45,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/chia-seed.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 71,
+      "name": "Dhatura Seed",
+      "emoji": "🫘",
+      "image": "dhatura-seed.jpg",
+      "category": "seeds",
+      "description": "**CAUTION: For knowledgeable practitioners only** – Dhatura (Datura stramonium) seeds are a potent traditional medicine requiring expert guidance for safe use. In highly controlled Ayurvedic preparations, they have been traditionally used for specific therapeutic purposes. Due to their toxic potential if misused, these seeds should only be handled by trained practitioners familiar with proper purification and dosing methods.",
+      "price": 16.99,
+      "comparePrice": 22.76,
+      "rating": 4.4,
+      "reviews": 367,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/dhatura-seed.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 72,
+      "name": "Fennel Seed",
+      "emoji": "🫘",
+      "image": "fennel-seed.jpg",
+      "category": "seeds",
+      "description": "Digestion's best friend – Fennel seeds (Saunf) are nature's answer to bloating, indigestion, and bad breath. These aromatic seeds stimulate digestive enzymes, reduce gas and cramping, freshen breath naturally, and contain phytoestrogens that may support hormonal balance. Chew a handful after meals for improved digestion, brew as tea for colic relief, or add to cooking for their sweet licorice flavor and carminative benefits.",
+      "price": 6.99,
+      "comparePrice": 9.37,
+      "rating": 4.9,
+      "reviews": 156,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/fennel-seed.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 73,
+      "name": "Flax Seed",
+      "emoji": "🫘",
+      "image": "flax-seed.jpg",
+      "category": "seeds",
+      "description": "Vegetarian omega-3 champion – Flax seeds (Alsi) are the richest plant source of ALA omega-3 fatty acids, essential for heart health, brain function, and reducing inflammation. High in lignans (powerful antioxidants), fiber, and protein, flax seeds support digestive health, help balance hormones, may reduce cancer risk, and promote skin hydration. Grind fresh for maximum absorption – add to smoothies, oatmeal, or baked goods for a nutritional boost.",
+      "price": 10.49,
+      "comparePrice": 12.69,
+      "rating": 4.9,
+      "reviews": 367,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/flax-seed.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 74,
+      "name": "Harmal",
+      "emoji": "🫘",
+      "image": "harmal.jpg",
+      "category": "seeds",
+      "description": "Traditional desert medicine – Harmal (Peganum harmala) seeds have been used in traditional medicine systems across Middle East and Asia for their reported psychoactive and medicinal properties. In traditional preparations, they have been used for specific therapeutic purposes including digestive support and ritual uses. This seed requires knowledgeable handling and should only be used under expert guidance due to its potency.",
+      "price": 17.99,
+      "comparePrice": 24.46,
+      "rating": 4.5,
+      "reviews": 123,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/harmal.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 75,
+      "name": "Jamalghota",
+      "emoji": "🫘",
+      "image": "jamalghota.jpg",
+      "category": "seeds",
+      "description": "Traditional purgative medicine – Jamalghota (Croton tiglium) seeds are a powerful traditional medicine used in extremely small, purified doses under expert supervision. In Ayurvedic formulations after proper Shodhana (purification), they have been used for specific therapeutic applications. **WARNING: Highly potent and potentially toxic** – must only be handled by trained practitioners with proper preparation knowledge.",
+      "price": 11.49,
+      "comparePrice": 14.13,
+      "rating": 4.5,
+      "reviews": 312,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/jamalghota.mp4",
+      "forms": [
+        "Whole Seeds"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 76,
+      "name": "Jamun Guthali",
+      "emoji": "🫘",
+      "image": "jamun-guthali.jpg",
+      "category": "seeds",
+      "description": "Blood sugar ally from nature – Jamun (Java Plum) seeds are traditionally valued in Ayurveda for supporting healthy blood sugar levels already in normal range. Dried and powdered, these seeds contain compounds like jamboline that may help manage sugar absorption. They also support digestive health and have astringent properties. A traditional remedy for those seeking natural blood sugar support through dietary means.",
+      "price": 5.49,
+      "comparePrice": 7.19,
+      "rating": 4.6,
+      "reviews": 312,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/jamun-guthali.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 77,
+      "name": "Kali Konch Kauso",
+      "emoji": "🫘",
+      "image": "kali-konch-kauso.jpg",
+      "category": "seeds",
+      "description": "Traditional velvet bean seeds – Kali Konch (Mucuna pruriens var.) seeds are a traditional Ayurvedic ingredient containing L-Dopa, a precursor to dopamine. In prepared formulations, they have been used to support nervous system health, mood, and vitality. Due to their potency and specific preparation requirements, these seeds should only be used in properly processed forms under knowledgeable guidance.",
+      "price": 16.99,
+      "comparePrice": 22.76,
+      "rating": 4.9,
+      "reviews": 156,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/kali-konch-kauso.mp4",
+      "forms": [
+        "Whole Seeds"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 78,
+      "name": "Kalonji",
+      "emoji": "🫘",
+      "image": "kalonji.jpg",
+      "category": "seeds",
+      "description": "The cure-all except death – Kalonji (Nigella sativa/Black Seed) was called 'the seed that cures everything except death' by Prophet Muhammad, and modern science validates its remarkable benefits. These tiny black seeds boost immunity, fight inflammation, lower blood sugar and cholesterol, support respiratory health, and possess potent anticancer properties. Sprinkle on food, take as oil, or consume raw daily for comprehensive wellness protection.",
+      "price": 10.49,
+      "comparePrice": 12.69,
+      "rating": 4.8,
+      "reviews": 189,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/kalonji.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 79,
+      "name": "Khaskhas 1024x1024",
+      "emoji": "🫘",
+      "image": "khaskhas_1024x1024.jpg",
+      "category": "seeds",
+      "description": "Tiny white seeds with big benefits – Poppy seeds (Khaskhas) add subtle nutty flavor and creamy texture to dishes while providing calcium, iron, and healthy fats. Traditionally used in Indian cuisine for curries, sweets, and thickening gravies, poppy seeds also support bone health, aid digestion when soaked, and may promote better sleep due to mild sedative properties. A culinary staple with hidden nutritional value.",
+      "price": 10.49,
+      "comparePrice": 12.69,
+      "rating": 4.4,
+      "reviews": 123,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/khaskhas_1024x1024.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 80,
+      "name": "Malkangani",
+      "emoji": "🫘",
+      "image": "malkangani.jpg",
+      "category": "seeds",
+      "description": "The brain-enhancing seed – Malkangani (Celastrus paniculatus/Jyotishmati) seeds are renowned in Ayurveda as a powerful brain tonic and memory enhancer. Traditional use suggests they support cognitive function, sharpen intellect, improve concentration, and may help with nervous system disorders. This esteemed herb is sought after by students, scholars, and anyone seeking natural mental performance enhancement.",
+      "price": 11.99,
+      "comparePrice": 14.87,
+      "rating": 4.9,
+      "reviews": 367,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/malkangani.mp4",
+      "forms": [
+        "Whole Seeds"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 81,
+      "name": "Pumpkin Seed",
+      "emoji": "🫘",
+      "image": "pumpkin-seed.jpg",
+      "category": "seeds",
+      "description": "Men's health secret weapon – Pumpkin seeds are nature's premier food for prostate health, thanks to their exceptional zinc content and phytosterols. These crunchy green seeds support bladder function, promote heart health with magnesium and omega-3s, improve sleep quality with tryptophan, and boost immunity with antioxidants. Eat roasted as snacks, sprinkle on salads, or blend into smoothies for delicious protective nutrition.",
+      "price": 18.99,
+      "comparePrice": 26.2,
+      "rating": 4.7,
+      "reviews": 234,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/pumpkin-seed.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 82,
+      "name": "Quinoa",
+      "emoji": "🫘",
+      "image": "quinoa.jpg",
+      "category": "seeds",
+      "description": "The complete protein grain – Quinoa is one of the few plant foods providing all 9 essential amino acids, making it a complete protein source. Gluten-free, rich in fiber, iron, B-vitamins, magnesium, and various antioxidants, quinoa supports sustained energy, digestive health, blood sugar stability, and tissue repair. This ancient Andean 'mother grain' cooks like rice but delivers superior nutrition – perfect for health-conscious families.",
+      "price": 15.49,
+      "comparePrice": 20.29,
+      "rating": 4.4,
+      "reviews": 89,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/quinoa.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 83,
+      "name": "Safed Konch Kauso",
+      "emoji": "🫘",
+      "image": "safed-konch-kauso.jpg",
+      "category": "seeds",
+      "description": "White velvet bean – Safed Konch (Mucana pruriens alba) is the white variety of traditional Kaunch beej, used in Ayurvedic preparations for nervous system support. Like its dark counterpart, it contains L-Dopa and has been traditionally used for vitality and neurological wellness. Proper processing and expert guidance are essential for safe use of this potent traditional seed medicine.",
+      "price": 11.49,
+      "comparePrice": 14.13,
+      "rating": 4.9,
+      "reviews": 234,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/safed-konch-kauso.mp4",
+      "forms": [
+        "Whole Seeds"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 84,
+      "name": "Satynashi Seed",
+      "emoji": "🫘",
+      "image": "satynashi-seed.jpg",
+      "category": "seeds",
+      "description": "Traditional nightshade medicine – Satynashi (Withania somnifera/Ashwagandha variant) seeds carry the adaptogenic properties of the Ashwagandha plant in seed form. In traditional preparations, they have been used for stress reduction, vitality, and rejuvenation. As with all potent seeds, proper identification, preparation, and dosage under expert guidance are crucial for safe beneficial use.",
+      "price": 12.99,
+      "comparePrice": 16.36,
+      "rating": 4.6,
+      "reviews": 67,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/satynashi-seed.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 85,
+      "name": "Siris Seed",
+      "emoji": "🫘",
+      "image": "siris-seed.jpg",
+      "category": "seeds",
+      "description": "Traditional legume medicine – Siris (Albizia lebbeck) seeds have been used in traditional medicine for their reported anti-inflammatory and calming properties. In folk preparations, they have been utilized for specific therapeutic purposes related to toxicity and nervous system support. Another example of nature's pharmacy found in common tree seeds.",
+      "price": 8.49,
+      "comparePrice": 11.63,
+      "rating": 4.7,
+      "reviews": 123,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/siris-seed.mp4",
+      "forms": [
+        "Whole Seeds",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 86,
+      "name": "Sunflower Seed",
+      "emoji": "🫘",
+      "image": "sunflower-seed.jpg",
+      "category": "seeds",
+      "description": "Vitamin E in every bite – Sunflower seeds are the richest source of vitamin E among common foods, providing powerful antioxidant protection for cells. These sunny seeds also deliver healthy fats, protein, magnesium, selenium, and phytosterols that support heart health, reduce cholesterol, promote skin health, and aid thyroid function. Enjoy raw, roasted, or as butter for snacking, baking, and salad topping excellence.",
+      "price": 18.49,
+      "comparePrice": 25.33,
+      "rating": 4.8,
+      "reviews": 123,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/sunflower-seed.mp4",
+      "forms": [
+        "Whole Seeds"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 87,
+      "name": "Aloevera Soap",
+      "emoji": "🧼",
+      "image": "aloevera-soap.jpg",
+      "category": "soap",
+      "description": "Nature's skin healer in a bar – Our Aloe Vera Soap combines pure aloe gel's moisturizing magic with gentle cleansing agents. Rich in vitamins A, C, and E, it deeply hydrates skin, accelerates wound healing, fights acne-causing bacteria, and reduces signs of aging by stimulating collagen production. Perfect for daily use on all skin types – even sensitive skin – leaving you soft, smooth, and naturally glowing.",
+      "price": 11.49,
+      "comparePrice": 14.13,
+      "rating": 4.4,
+      "reviews": 156,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "75g",
+        "100g",
+        "125g",
+        "150g"
+      ],
+      "priceMultiplier": {
+        "75g": 0.75,
+        "100g": 1,
+        "125g": 1.2,
+        "150g": 1.4
+      },
+      "video": "/videos/aloevera-soap.mp4",
+      "forms": [
+        "1 Piece"
+      ],
+      "defaultForm": "piece",
+      "showFormSelector": false
+    },
+    {
+      "id": 88,
+      "name": "Gomutra Soap",
+      "emoji": "🧼",
+      "image": "gomutra-soap.jpg",
+      "category": "soap",
+      "description": "Ancient Ayurvedic skincare wisdom – Gomutra (Cow Urine) Soap harnesses the powerful antibacterial and anti-inflammatory properties of distilled cow urine to treat stubborn skin conditions. Effective against eczema, psoriasis, fungal infections, and acne, this traditional formulation purifies skin at the cellular level. Combined with natural herbs, it offers a holistic solution for those seeking chemical-free relief from chronic skin ailments.",
+      "price": 10.49,
+      "comparePrice": 12.69,
+      "rating": 4.7,
+      "reviews": 89,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "75g",
+        "100g",
+        "125g",
+        "150g"
+      ],
+      "priceMultiplier": {
+        "75g": 0.75,
+        "100g": 1,
+        "125g": 1.2,
+        "150g": 1.4
+      },
+      "video": "/videos/gomutra-soap.mp4",
+      "forms": [
+        "1 Piece"
+      ],
+      "defaultForm": "piece",
+      "showFormSelector": false
+    },
+    {
+      "id": 89,
+      "name": "Haldi Soap",
+      "emoji": "🧼",
+      "image": "haldi-soap.jpg",
+      "category": "soap",
+      "description": "Golden glow from nature's pharmacy – Haldi (Turmeric) Soap brings turmeric's legendary anti-inflammatory and antibacterial properties directly to your skincare routine. This brightening soap fights acne, reduces dark spots and pigmentation, soothes irritated skin, and evens out complexion with every wash. Its antioxidant-rich formula protects against sun damage while giving your skin a natural golden radiance that synthetic products cannot match.",
+      "price": 10.49,
+      "comparePrice": 12.69,
+      "rating": 4.8,
+      "reviews": 45,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "75g",
+        "100g",
+        "125g",
+        "150g"
+      ],
+      "priceMultiplier": {
+        "75g": 0.75,
+        "100g": 1,
+        "125g": 1.2,
+        "150g": 1.4
+      },
+      "video": "/videos/haldi-soap.mp4",
+      "forms": [
+        "1 Piece"
+      ],
+      "defaultForm": "piece",
+      "showFormSelector": false
+    },
+    {
+      "id": 90,
+      "name": "Mixed Hair Soap",
+      "emoji": "🧼",
+      "image": "mixed-hair-soap.jpg",
+      "category": "soap",
+      "description": "Complete hair care in one bar – Our Mixed Hair Soap blends multiple Ayurvedic herbs specifically chosen for scalp health and hair vitality. This herbal formulation cleanses hair without stripping natural oils, strengthens roots, reduces dandruff, prevents premature graying, and promotes healthy shine. Free from harsh sulfates and parabens, it's the natural alternative for those seeking lustrous, problem-free hair through traditional herbal wisdom.",
+      "price": 9.49,
+      "comparePrice": 13.19,
+      "rating": 4.9,
+      "reviews": 67,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "75g",
+        "100g",
+        "125g",
+        "150g"
+      ],
+      "priceMultiplier": {
+        "75g": 0.75,
+        "100g": 1,
+        "125g": 1.2,
+        "150g": 1.4
+      },
+      "video": "/videos/mixed-hair-soap.mp4",
+      "forms": [
+        "1 Piece"
+      ],
+      "defaultForm": "piece",
+      "showFormSelector": false
+    },
+    {
+      "id": 91,
+      "name": "Mixed Skin Soap",
+      "emoji": "🧼",
+      "image": "mixed-skin-soap.jpg",
+      "category": "soap",
+      "description": "Balanced beauty for every skin type – Our Mixed Skin Soap combines the best Ayurvedic herbs for comprehensive skincare. Formulated to address multiple concerns simultaneously – from acne and oiliness to dryness and dullness – this versatile soap cleanses deeply while nourishing with botanical extracts. Experience clearer, softer, more radiant skin with the power of time-tested herbal ingredients working in perfect harmony.",
+      "price": 11.49,
+      "comparePrice": 14.13,
+      "rating": 4.4,
+      "reviews": 123,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "75g",
+        "100g",
+        "125g",
+        "150g"
+      ],
+      "priceMultiplier": {
+        "75g": 0.75,
+        "100g": 1,
+        "125g": 1.2,
+        "150g": 1.4
+      },
+      "video": "/videos/mixed-skin-soap.mp4",
+      "forms": [
+        "1 Piece"
+      ],
+      "defaultForm": "piece",
+      "showFormSelector": false
+    },
+    {
+      "id": 92,
+      "name": "Neem Soap",
+      "emoji": "🧼",
+      "image": "neem-soap.jpg",
+      "category": "soap",
+      "description": "Ayurveda's ultimate skin protector – Neem Soap delivers nature's most powerful antibacterial and antifungal agent directly to your skin. With over 130 active compounds, neem effectively treats acne, pimples, rashes, and fungal infections while detoxifying pores and controlling excess oil. Used for centuries as nature's pharmacy, this soap is your complete solution for clear, healthy, trouble-free skin without harmful chemicals.",
+      "price": 9.49,
+      "comparePrice": 13.19,
+      "rating": 5.0,
+      "reviews": 367,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "75g",
+        "100g",
+        "125g",
+        "150g"
+      ],
+      "priceMultiplier": {
+        "75g": 0.75,
+        "100g": 1,
+        "125g": 1.2,
+        "150g": 1.4
+      },
+      "video": "/videos/neem-soap.mp4",
+      "forms": [
+        "1 Piece"
+      ],
+      "defaultForm": "piece",
+      "showFormSelector": false
+    },
+    {
+      "id": 93,
+      "name": "Tetepati Soap",
+      "emoji": "🧼",
+      "image": "tetepati-soap.jpg",
+      "category": "soap",
+      "description": "Traditional Himalayan cleansing wisdom – Tetepati (Artemisia) Soap incorporates the medicinal properties of this aromatic mountain herb known for its skin-soothing and cleansing abilities. This unique formulation helps calm skin irritations, provides gentle antimicrobial protection, and leaves skin refreshed and revitalized. A rare herbal soap experience connecting you to ancient Himalayan wellness traditions.",
+      "price": 6.49,
+      "comparePrice": 8.63,
+      "rating": 4.7,
+      "reviews": 367,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "75g",
+        "100g",
+        "125g",
+        "150g"
+      ],
+      "priceMultiplier": {
+        "75g": 0.75,
+        "100g": 1,
+        "125g": 1.2,
+        "150g": 1.4
+      },
+      "video": "/videos/tetepati-soap.mp4",
+      "forms": [
+        "1 Piece"
+      ],
+      "defaultForm": "piece",
+      "showFormSelector": false
+    },
+    {
+      "id": 94,
+      "name": "Camphor",
+      "emoji": "🧂",
+      "image": "camphor.jpg",
+      "category": "namak",
+      "description": "Purifying aromatic crystal – Camphor (Kapur) has been used for centuries in religious ceremonies, aromatherapy, and traditional medicine. Its distinctive penetrating aroma cleanses negative energy, repels insects, relieves congestion when inhaled, and provides cooling sensation when applied to skin. Essential for puja rituals, camphor also finds use in traditional ointments and chest rubs for its soothing respiratory benefits.",
+      "price": 8.99,
+      "comparePrice": 12.4,
+      "rating": 4.9,
+      "reviews": 156,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/camphor.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 95,
+      "name": "Jawakhar",
+      "emoji": "🧂",
+      "image": "jawakhar.jpg",
+      "category": "namak",
+      "description": "Digestive salt from Ayurveda – Jawakhar is a traditional Ayurvedic preparation made by purifying common salt with herbs, creating a lighter, more digestible salt variety. It stimulates appetite, aids digestion, reduces bloating, and is easier on the stomach than regular salt. Often prescribed in Ayurvedic formulations for digestive disorders, Jawakhar represents the sophisticated pharmaceutical science of traditional Indian medicine.",
+      "price": 12.49,
+      "comparePrice": 15.61,
+      "rating": 4.8,
+      "reviews": 67,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/jawakhar.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 96,
+      "name": "Kala Namak",
+      "emoji": "🧂",
+      "image": "kala-namak.jpg",
+      "category": "namak",
+      "description": "The egg-flavored health salt – Kala Namak (Himalayan Black Salt) is a volcanic rock salt with characteristic sulfuric taste reminiscent of eggs. Rich in iron, calcium, and lower in sodium than table salt, it supports digestion, reduces bloating, relieves gas, and is recommended for low-sodium diets. Essential chaat masala ingredient, Kala Namak adds unique umami flavor while providing mineral benefits unavailable in refined salts.",
+      "price": 7.99,
+      "comparePrice": 10.86,
+      "rating": 4.4,
+      "reviews": 156,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/kala-namak.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 97,
+      "name": "Kala Sajji Khar",
+      "emoji": "🧂",
+      "image": "kala-sajji-khar.jpg",
+      "category": "namak",
+      "description": "Traditional alkaline salt – Kala Sajji Khar is a dark-colored alkaline salt traditionally used in Rajasthani and Himalayan cuisines for cooking specific dishes like papads and certain vegetables. Its alkaline nature aids digestion, tenderizes tough ingredients, and provides essential minerals. A specialty cooking ingredient representing regional culinary traditions passed down through generations.",
+      "price": 11.49,
+      "comparePrice": 14.13,
+      "rating": 5.0,
+      "reviews": 156,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/kala-sajji-khar.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 98,
+      "name": "Kalmi Shora",
+      "emoji": "🧂",
+      "image": "kalmi-shora.jpg",
+      "category": "namak",
+      "description": "Traditional ammonium chloride – Kalmi Shora (Ammonium Chloride/Nausadar) is a traditional salt used in specific culinary applications like pan (betel leaf) preparation and certain snacks. In controlled amounts, it has been used traditionally for its expectorant properties in respiratory remedies. An interesting example of how traditional cuisines incorporate mineral salts for both flavor and functional purposes.",
+      "price": 14.49,
+      "comparePrice": 18.69,
+      "rating": 4.6,
+      "reviews": 367,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/kalmi-shora.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 99,
+      "name": "Mithi Soda",
+      "emoji": "🧂",
+      "image": "mithi-soda.jpg",
+      "category": "namak",
+      "description": "Pure baking soda for wellness – Mithi Soda (Sodium Bicarbonate/Baking Soda) is a household multitasker with countless health and cleaning uses. Internally, it neutralizes stomach acidity, supports urinary tract health, and may support kidney function. Externally, it whitens teeth, soothes skin, deodorizes, and cleans naturally. Every natural home should stock this versatile, eco-friendly compound for daily wellness needs.",
+      "price": 4.99,
+      "comparePrice": 6.49,
+      "rating": 4.9,
+      "reviews": 89,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/mithi-soda.mp4",
+      "forms": [
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 100,
+      "name": "Nausadar Fali",
+      "emoji": "🧂",
+      "image": "nausadar-fali.jpg",
+      "category": "namak",
+      "description": "Crystallized ammonium salt – Nausadar Fali is the crystallized form of ammonium chloride, traditionally used in specific culinary preparations and folk remedies. In carefully measured amounts, it has served as an expectorant in traditional cough preparations and as a food additive in certain regional specialties. Represents the diverse mineral-based ingredients in traditional pharmacopeias.",
+      "price": 14.99,
+      "comparePrice": 19.48,
+      "rating": 4.6,
+      "reviews": 367,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/nausadar-fali.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 101,
+      "name": "Phatkri",
+      "emoji": "🧂",
+      "image": "phatkri.jpg",
+      "category": "namak",
+      "description": "Natural alum for purification – Phatkri (Alum/Phitkari) is a naturally occurring crystalline mineral with powerful astringent and water-purifying properties. Traditionally used as a natural deodorant, aftershave, and water clarifier, alum tightens pores, stops bleeding from minor cuts, and eliminates impurities from water. A must-have natural mineral for personal care, water treatment, and traditional purification rituals.",
+      "price": 14.99,
+      "comparePrice": 19.48,
+      "rating": 4.6,
+      "reviews": 89,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/phatkri.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 102,
+      "name": "Red Phatkri",
+      "emoji": "🧂",
+      "image": "red-phatkri.jpg",
+      "category": "namak",
+      "description": "Premium red alum variety – Red Phatkri is a special variety of alum with enhanced properties due to its iron oxide content. Sharing all benefits of regular alum – astringent action, water purification, pore tightening – the red variety is considered particularly effective for traditional uses in skincare and water treatment. Collectors of traditional remedies often seek this less common variety for its reputed superior efficacy.",
+      "price": 9.49,
+      "comparePrice": 13.19,
+      "rating": 4.8,
+      "reviews": 234,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/red-phatkri.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 103,
+      "name": "Safed Sajji Khar",
+      "emoji": "🧂",
+      "image": "safed-sajji-khar.jpg",
+      "category": "namak",
+      "description": "White cooking alkali – Safed Sajji Khar is the white variety of traditional edible alkali salt used in regional cuisines for specific cooking applications. It helps tenderize, aids digestion of certain foods, and provides essential minerals in bioavailable form. Used alongside its darker counterpart in traditional recipes, this salt represents the sophisticated food science embedded in ancestral cooking practices.",
+      "price": 8.99,
+      "comparePrice": 12.4,
+      "rating": 4.9,
+      "reviews": 189,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/safed-sajji-khar.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 104,
+      "name": "Samudri Namak",
+      "emoji": "🧂",
+      "image": "samudri-namak.jpg",
+      "category": "namak",
+      "description": "Ocean's mineral treasure – Samudri Namak (Sea Salt) is produced by evaporating seawater, retaining valuable trace minerals absent in processed table salt. Rich in potassium, magnesium, and calcium, sea salt supports electrolyte balance, proper nerve function, and hydration. The subtle flavor complexity elevates any dish while providing essential minerals your body needs. Choose unrefined sea salt for real mineral nutrition.",
+      "price": 7.49,
+      "comparePrice": 10.11,
+      "rating": 4.3,
+      "reviews": 156,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/samudri-namak.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 105,
+      "name": "Sedha Namak",
+      "emoji": "🧂",
+      "image": "sedha-namak.jpg",
+      "category": "namak",
+      "description": "Unrefined rock salt – Sedha Namak (Rock Salt/Sendha Namak) is mined from ancient underground deposits, free from ocean pollutants and modern processing chemicals. Considered the purest salt in Ayurveda, it balances all three doshas, supports digestion, improves metabolism, and is recommended for fasting and religious observances. Its subtle flavor and mineral richness make it the preferred choice of health-conscious traditional households.",
+      "price": 8.49,
+      "comparePrice": 11.63,
+      "rating": 4.8,
+      "reviews": 67,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/sedha-namak.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 106,
+      "name": "Surkh Sajjikhar",
+      "emoji": "🧂",
+      "image": "surkh-sajjikhar.jpg",
+      "category": "namak",
+      "description": "Red cooking alkali – Surkh Sajjikhar is the reddish variety of traditional edible alkali salt, used similarly to other sajji khar varieties in regional cooking. Its distinct color indicates specific mineral composition suited for particular dishes and preparations. Part of the diverse family of traditional salts showing how our ancestors incorporated various minerals into daily nutrition through intelligent food preparation.",
+      "price": 3.99,
+      "comparePrice": 5.11,
+      "rating": 5.0,
+      "reviews": 89,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/surkh-sajjikhar.mp4",
+      "forms": [
+        "Crystals"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 107,
+      "name": "Thikri Nausadar",
+      "emoji": "🧂",
+      "image": "thikri-nausadar.jpg",
+      "category": "namak",
+      "description": "Solidified ammonium salt – Thikri Nausadar is the solid block/cake form of ammonium chloride, used traditionally for specific applications requiring slow-release or measured portions. In folk traditions, pieces were shaved off as needed for culinary or medicinal purposes. Another fascinating example of the diverse salt and mineral products developed by traditional societies for specific functional needs.",
+      "price": 4.49,
+      "comparePrice": 5.79,
+      "rating": 4.8,
+      "reviews": 89,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/thikri-nausadar.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 108,
+      "name": "Unbujh Chuna",
+      "emoji": "🧂",
+      "image": "unbujh-chuna.jpg",
+      "category": "namak",
+      "description": "Edible limestone powder – Unbujh Chuna (Edible Lime/Calcium Hydroxide) is traditionally consumed with paan (betel leaf), added to betel quid preparations, and used in certain pickles and traditional foods. It provides bioavailable calcium, supports digestion, and is believed to have antimicrobial properties in the oral cavity. A reminder of how traditional cultures incorporated minerals into daily life for both nutrition and pleasure.",
+      "price": 7.99,
+      "comparePrice": 10.86,
+      "rating": 4.4,
+      "reviews": 156,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "250g": 0.55,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "video": "/videos/unbujh-chuna.mp4",
+      "forms": [
+        "Crystals",
+        "Powdered"
+      ],
+      "defaultForm": "crystals",
+      "showFormSelector": true
+    },
+    {
+      "id": 109,
+      "name": "Dalchini High Grade",
+      "emoji": "🌶️",
+      "image": "dalchini-high-grade.jpg",
+      "category": "masala",
+      "description": "Premium Ceylon cinnamon – Our High-Grade Dalchini features the finest Ceylon cinnamon ('true cinnamon'), prized for its delicate sweetness and superior therapeutic profile. Loaded with antioxidants, cinnamaldehyde, and anti-inflammatory compounds, this premium spice supports healthy blood sugar, protects heart health, fights bacterial infections, and adds sophisticated warmth to desserts, beverages, and savory dishes. The discerning chef's choice for quality and health.",
+      "price": 11.49,
+      "comparePrice": 14.13,
+      "rating": 5.0,
+      "reviews": 123,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.75,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/dalchini-high-grade.mp4",
+      "forms": [
+        "Whole Spice",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 110,
+      "name": "Dalchini Low Grade",
+      "emoji": "🌶️",
+      "image": "dalchini-low-grade.jpg",
+      "category": "masala",
+      "description": "Everyday Cassia cinnamon – Our affordable Dalchini Low Grade offers robust cassia cinnamon flavor perfect for daily cooking. While stronger and more pungent than Ceylon variety, it still delivers cinnamon's benefits: blood sugar support, antioxidant protection, and antimicrobial action. Ideal for hearty curries, baked goods, chai masala, and dishes where bold cinnamon character shines. Great value without compromising on genuine spice quality.",
+      "price": 5.99,
+      "comparePrice": 7.91,
+      "rating": 4.8,
+      "reviews": 123,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.75,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/dalchini-low-grade.mp4",
+      "forms": [
+        "Whole Spice",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 111,
+      "name": "Jaifal",
+      "emoji": "🌶️",
+      "image": "jaifal.jpg",
+      "category": "masala",
+      "description": "Aromatic brain booster – Jaifal (Nutmeg) is a warm, sweet spice treasured for both culinary excellence and medicinal properties. Contains myristicin and elemicin compounds that may enhance mood, support cognitive function, induce calm sleep, and relieve pain. Improves digestion, detoxifies liver, and maintains oral health. A pinch transforms sweets, curries, and beverages while delivering subtle wellness benefits with each serving.",
+      "price": 6.99,
+      "comparePrice": 9.37,
+      "rating": 4.6,
+      "reviews": 89,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.75,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/jaifal.mp4",
+      "forms": [
+        "Whole Spice",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 112,
+      "name": "Kali Mirch",
+      "emoji": "🌶️",
+      "image": "kali-mirch.jpg",
+      "category": "masala",
+      "description": "King of Spices – Kali Mirch (Black Pepper) earns its royal title from piperine, the compound responsible for both its pungency and remarkable health benefits. Enhances nutrient absorption of other foods by up to 2000%, aids digestion, reduces inflammation, supports brain function, and may help break down fat cells. Freshly ground black pepper transforms any dish while maximizing nutritional value – the ultimate everyday super-spice.",
+      "price": 5.99,
+      "comparePrice": 7.91,
+      "rating": 4.8,
+      "reviews": 367,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.75,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/kali-mirch.mp4",
+      "forms": [
+        "Whole Spice",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 113,
+      "name": "Large Cardamom",
+      "emoji": "🌶️",
+      "image": "large-cardamom.jpg",
+      "category": "masala",
+      "description": "Smoky mountain warmth – Large Cardamom (Badi Elaichi/Black Cardamom) brings bold, smoky, camphor-like flavor that defines many hearty Indian dishes. Medicinally, it supports respiratory health, aids digestion of heavy foods, improves oral health, and has warming properties perfect for cold climates. Essential for Garam Masala, Kashmiri cuisine, and spiced teas – no spice collection is complete without this aromatic pod.",
+      "price": 14.49,
+      "comparePrice": 18.69,
+      "rating": 4.8,
+      "reviews": 278,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.75,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/large-cardamom.mp4",
+      "forms": [
+        "Whole Spice",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 114,
+      "name": "Lwang Clove",
+      "emoji": "🌶️",
+      "image": "lwang-clove.jpg",
+      "category": "masala",
+      "description": "Dental defense in a spice – Lwang (Cloves) are dried flower buds packing one of nature's most potent concentrations of eugenol – a powerful compound with analgesic, antiseptic, and anti-inflammatory properties. Cloves dominate toothache relief, fight oral bacteria, freshen breath, aid digestion, boost immunity, and regulate blood sugar. Their intense warm spice flavor transforms curries, rice dishes, biryanis, and mulled beverages while protecting your health.",
+      "price": 19.99,
+      "comparePrice": 27.98,
+      "rating": 4.6,
+      "reviews": 123,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.75,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/lwang-clove.mp4",
+      "forms": [
+        "Whole Spice",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 115,
+      "name": "Pipli",
+      "emoji": "🌶️",
+      "image": "pipli.jpg",
+      "category": "masala",
+      "description": "Ancient Ayurvedic digestive – Pipli (Pippali/Long Pepper) was a prized spice in ancient Greece and Rome before black pepper dominated. This elongated relative of black pepper offers piperine's benefits with additional respiratory-supporting properties. Warms the body, clears sinuses, improves digestion, enhances metabolism, and supports lung health. Essential for Ayurvedic formulations and worth rediscovering in modern kitchens.",
+      "price": 10.49,
+      "comparePrice": 12.69,
+      "rating": 4.6,
+      "reviews": 367,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.75,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/pipli.mp4",
+      "forms": [
+        "Whole Spice",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 116,
+      "name": "Star Anise",
+      "emoji": "🌶️",
+      "image": "star-anise.jpg",
+      "category": "masala",
+      "description": "Beautiful eight-pointed star of health – Star Anise (Chakra Phool) is visually stunning and therapeutically impressive, containing shikimic acid (used in flu medications). Supports digestion, relieves bloating, fights viral, bacterial, and fungal infections, and reduces inflammation. The signature spice of Chinese Five Spice and Biryanis, star anise infuses soups, stews, and desserts with its sweet licorice-like aroma while fighting pathogens.",
+      "price": 14.99,
+      "comparePrice": 19.48,
+      "rating": 4.4,
+      "reviews": 89,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.75,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/star-anise.mp4",
+      "forms": [
+        "Whole Spice",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 117,
+      "name": "Sukumel Green Cardamom",
+      "emoji": "🌶️",
+      "image": "sukumel-green-cardamom.jpg",
+      "category": "masala",
+      "description": "Queen of Spices – Sukumel Green Cardamom (Choti Elaichi) is the world's third-most expensive spice, treasured for its intoxicating fragrance and versatile benefits. Freshens breath instantly, aids digestion, detoxifies body, supports respiratory health, and may help regulate blood pressure. Essential for Indian sweets, chai masala, and kheer – no celebration meal is complete without cardamom's regal presence.",
+      "price": 6.49,
+      "comparePrice": 8.63,
+      "rating": 4.5,
+      "reviews": 89,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.75,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/sukumel-green-cardamom.mp4",
+      "forms": [
+        "Whole Spice",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 118,
+      "name": "Tejpatta",
+      "emoji": "🌶️",
+      "image": "tejpatta.jpg",
+      "category": "masala",
+      "description": "Fragrant flavor enhancer – Tejpatta (Indian Bay Leaf) releases subtle complex flavors when tempered in oil, transforming ordinary dishes into aromatic experiences. Beyond culinary magic, bay leaves aid digestion, manage blood sugar, reduce LDL cholesterol, protect heart health, and possess antimicrobial properties. Always add whole and remove before serving – tejpatta's essence infuses food while remaining inedible itself.",
+      "price": 19.49,
+      "comparePrice": 27.09,
+      "rating": 4.7,
+      "reviews": 45,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.75,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/tejpatta.mp4",
+      "forms": [
+        "Whole Spice",
+        "Ground Powder"
+      ],
+      "defaultForm": "whole",
+      "showFormSelector": true
+    },
+    {
+      "id": 119,
+      "name": "Reishi Mushroom",
+      "emoji": "🍄",
+      "image": "reishi-mushroom.jpg",
+      "category": "mushroom",
+      "description": "The mushroom of immortality – Reishi (Ganoderma lucidum/Lingzhi) is the most revered medicinal mushroom in Traditional Chinese Medicine, used for over 2,000 years as a longevity tonic. Supports immune system modulation, reduces stress and fatigue, improves sleep quality, supports cardiovascular health, and may inhibit tumor growth. Available in dried form for teas, extracts, and supplements – Reishi is the ultimate functional mushroom for comprehensive wellness optimization.",
+      "price": 35.99,
+      "comparePrice": 47.5,
+      "rating": 4.6,
+      "reviews": 89,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "50g",
+        "100g",
+        "250g",
+        "500g"
+      ],
+      "priceMultiplier": {
+        "50g": 0.6,
+        "100g": 1,
+        "250g": 2.2,
+        "500g": 4.0
+      },
+      "video": "/videos/reishi-mushroom.mp4",
+      "forms": [
+        "Dried Whole"
+      ],
+      "defaultForm": "dried",
+      "showFormSelector": true
+    },
+    {
+      "id": 120,
+      "name": "Hemp Seeds",
+      "emoji": "🫘",
+      "image": "hemp-seeds.jpg",
+      "category": "seeds",
+      "description": "Complete plant protein perfection – Hemp seeds deliver all 9 essential amino acids in perfect ratio, making them a rare complete plant protein source. Rich in omega-3 and omega-6 in ideal 3:1 balance, plus magnesium, zinc, and iron, hemp seeds support heart health, brain function, skin health, and muscle recovery. Their mild nutty taste makes them easy to add to salads, smoothies, or yogurt for sustainable, clean protein nutrition.",
+      "price": 11.99,
+      "comparePrice": 14.87,
+      "rating": 4.7,
+      "reviews": 156,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/hemp-seeds.mp4"
+    },
+    {
+      "id": 121,
+      "name": "Silam",
+      "emoji": "🫘",
+      "image": "silam1.jpeg",
+      "category": "seeds",
+      "description": "Traditional flaxseed variety – Silam refers to locally cultivated flaxseed varieties prized in traditional agriculture for their oil content and medicinal properties. Similar to commercial flax, these seeds offer omega-3 fatty acids, fiber, and lignans supporting heart health, digestion, and hormonal balance. Supporting local heirloom varieties preserves agricultural biodiversity and traditional farming knowledge.",
+      "price": 13.99,
+      "comparePrice": 17.9,
+      "rating": 4.6,
+      "reviews": 156,
+      "defaultWeight": "250g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.45,
+        "250g": 1,
+        "500g": 1.8,
+        "1 Kg": 3.2
+      },
+      "video": "/videos/silam1.mp4"
+    },
+    {
+      "id": 122,
+      "name": "Himali Chauri Cow's Ghee",
+      "emoji": "✨",
+      "image": "Himali Chauri Cow's Ghee.jpg",
+      "category": "resin",
+      "description": "Golden elixir of Ayurveda – Himali Chauri Ghee is made from the milk of indigenous Chauri (Yak-Cow hybrid) grazing on high-altitude Himalayan pastures. This premium ghee is richer in nutrients, has a deeper golden color, and carries the unique flavor of mountain herbs. Butyrate-rich ghee supports digestion, nourishes tissues, boosts immunity, enhances memory, and is the preferred cooking medium in Ayurveda for its sattvic (pure) qualities.",
+      "price": 31.99,
+      "comparePrice": 39.66,
+      "rating": 4.7,
+      "reviews": 67,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": true,
+      "weights": [
+        "25g",
+        "50g",
+        "100g",
+        "250g",
+        "500g"
+      ],
+      "priceMultiplier": {
+        "25g": 0.3,
+        "50g": 0.55,
+        "100g": 1,
+        "250g": 2.2,
+        "500g": 4.0
+      },
+      "forms": [
+        "Raw Resin",
+        "Powdered"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true,
+      "video": "/videos/Himali Chauri Cow's Ghee.mp4"
+    },
+    {
+      "id": 123,
+      "name": "Kutki",
+      "emoji": "🌿",
+      "image": "kutki.jpg",
+      "category": "herbs",
+      "description": "Premium quality Kutki sourced from organic farms. Traditionally used in Ayurvedic medicine for its therapeutic properties. Carefully processed to preserve potency and freshness.",
+      "price": 17.99,
+      "comparePrice": 24.46,
+      "rating": 4.3,
+      "reviews": 312,
+      "defaultWeight": "500g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "100g",
+        "250g",
+        "500g",
+        "1 Kg",
+        "5 Kg"
+      ],
+      "priceMultiplier": {
+        "100g": 0.22,
+        "250g": 0.48,
+        "500g": 1,
+        "1 Kg": 1.85,
+        "5 Kg": 8.0
+      },
+      "forms": [
+        "Raw Form",
+        "Powder Form"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true,
+      "video": "/videos/kutki.mp4"
+    },
+    {
+      "id": 124,
+      "name": "Musabbar Elwa",
+      "emoji": "✨",
+      "image": "musabbar-elwa.jpg",
+      "category": "resin",
+      "description": "Elwa Resin (also called Kala Gond, Aloe Gum, or Sibre Zard in Unani medicine) is the dried, solidified latex form of pure Aloe Vera juice, traditionally prepared by boiling down the plant's sap and allowing it to naturally dry into potent, dark resin chunks. This 100% natural resin has been used for centuries in traditional herbal medicine and holistic wellness practices across South Asia and the Middle East.",
+      "price": 21.49,
+      "comparePrice": 26.43,
+      "rating": 4.8,
+      "reviews": 367,
+      "defaultWeight": "100g",
+      "unitType": "weight",
+      "featured": false,
+      "weights": [
+        "25g",
+        "50g",
+        "100g",
+        "250g",
+        "500g"
+      ],
+      "priceMultiplier": {
+        "25g": 0.3,
+        "50g": 0.55,
+        "100g": 1,
+        "250g": 2.2,
+        "500g": 4.0
+      },
+      "forms": [
+        "Raw Resin"
+      ],
+      "defaultForm": "raw",
+      "showFormSelector": true,
+      "video": "/videos/musabbar-elwa.mp4"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Priya Sharma",
+      "role": "Ayurvedic Practitioner",
+      "initials": "PS",
+      "text": "The Organic Tulsi and Ashwagandha Root Powder are exceptional quality. I recommend these to my patients regularly - you can tell they are genuinely organic and carefully processed with high potency.",
+      "rating": 5
+    },
+    {
+      "name": "Dr. Rajesh Patel",
+      "role": "Wellness Coach",
+      "initials": "RP",
+      "text": "The Frankincense Resin has transformed my meditation practice. The aroma is pure and long-lasting. Combined with their Neem Oil for my skincare routine, this is my go-to source for authentic Ayurvedic products.",
+      "rating": 5
+    },
+    {
+      "name": "Anita Desai",
+      "role": "Home Gardener",
+      "initials": "AD",
+      "text": "The Chia Seeds and Fenugreek Seeds have become staples in my kitchen. Great germination rate when I tried sprouting them! The Cold Pressed Oils collection is outstanding - you can taste the freshness and purity.",
+      "rating": 5
+    }
+  ]
+}

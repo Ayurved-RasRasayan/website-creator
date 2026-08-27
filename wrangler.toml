@@ -1,0 +1,96 @@
+# =============================================================================
+# Cloudflare Pages Configuration
+# Project:himvedic herbals)
+# =============================================================================
+#
+# DEPLOYMENT METHOD:
+# - Production: Automatic via GitHub Actions (push to main)
+# - Preview: Automatic via GitHub Actions (pull requests)
+# - Manual: wrangler pages deploy . --project-name=gaumatosewa
+#
+# ENVIRONMENT VARIABLES:
+# These are used by /functions/api/config.js to serve dynamic config.
+# This is the SINGLE SOURCE OF TRUTH for all site configuration.
+# For sensitive values, use Cloudflare Dashboard > Pages > Settings > Environment Variables.
+# =============================================================================
+
+name = "himvedicherbals"
+#pages_build_output_dir = "."  # Static site, no build step needed
+compatibility_date = "2024-01-01"
+
+# =============================================================================
+[[d1_databases]]
+binding = "DB"
+database_name = "blog-db"
+database_id = "<place your uuid here>"
+
+[[d1_databases]]
+binding = "DB1"
+database_name = "users-db"
+database_id = "<place your uuid here>"
+
+# =============================================================================
+# Production Environment Variables
+# Used when deploying to production (main branch)
+# =============================================================================
+[vars]
+# Site Identity
+SITE_NAME = "Trishanku Baba"
+SITE_TAGLINE = "Your trusted source for premium organic gau products, bio-fertilizers, and medicinal herbs. Sourced sustainably, delivered with care."
+SITE_COPYRIGHT = "\u00a9 2025 Trishanku Baba. All rights reserved. Made with \u2764\ufe0f for the planet"
+
+# Contact Information
+CONTACT_EMAIL = "gaumatosewa@gmail.com"
+CONTACT_PHONE = "+977-9800000000"
+
+# Location (Kathmandu, Nepal)
+ADDRESS_CITY = "Kathmandu"
+ADDRESS_PROVINCE = "Bagmati"
+ADDRESS_COUNTRY = "Nepal"
+
+# Currency Settings
+DEFAULT_CURRENCY = "USD"
+EXCHANGE_RATE_TO_NPR = "133.50"
+
+# Admin: first signup or this email becomes admin
+ADMIN_EMAIL = "gaumatosewa@gmail.com"
+ADMIN_USERNAME = ""
+ADMIN_PASSWORD = ""
+
+ALLOWED_ORIGINS = https://your-actual-domain.pages.dev
+
+# =============================================================================
+# Preview Environment (for pull requests)
+# Overrides production values for testing
+# =============================================================================
+[env.preview]
+name = "himvedicherbal - preview"
+
+[env.preview.vars]
+SITE_NAME = "VedaBotanica Research and Development [PREVIEW]"
+SITE_TAGLINE = "Your trusted source for premium organic gau products, bio-fertilizers, and medicinal herbs. Sourced sustainably, delivered with care."
+SITE_COPYRIGHT = "\u00a9 2025 VedaBotanica R&D [PREVIEW]. All rights reserved."
+CONTACT_EMAIL = "gaumatosewa@gmail.com"
+CONTACT_PHONE = "+977-9800000000"
+ADDRESS_CITY = "Kathmandu"
+ADDRESS_PROVINCE = "Bagmati"
+ADDRESS_COUNTRY = "Nepal"
+DEFAULT_CURRENCY = "USD"
+EXCHANGE_RATE_TO_NPR = "133.50"
+
+# =============================================================================
+# Deployment Triggers (Reference)
+# =============================================================================
+# 
+# GitHub Actions Workflow: .github/workflows/deploy.yml
+# 
+# Trigger Matrix:
+# +---------------------+------------------+-----------------+
+# | Event               | Branch           | Action          |
+# +---------------------+------------------+-----------------+
+# | push                | main             | Deploy Prod     |
+# | pull_request        | feature/*        | Deploy Preview  |
+# | workflow_dispatch   | any              | Manual Deploy   |
+# +---------------------+------------------+-----------------+
+#
+# =============================================================================

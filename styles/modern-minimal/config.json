@@ -1,0 +1,13 @@
+{
+  "name": "Modern Minimal",
+  "description": "Clean Inter font, soft rounded corners, open spacing",
+  "font_family": "'Inter', system-ui, -apple-system, sans-serif",
+  "font_link": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap",
+  "font_name": "Inter",
+  "border_radius_card": "1rem",
+  "border_radius_card_sm": "0.75rem",
+  "border_radius_btn": "0.75rem",
+  "border_radius_badge": "9999px",
+  "shadow_intensity": "1",
+  "grid_density": "normal"
+}

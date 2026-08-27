@@ -1,0 +1,43 @@
+{
+  "name": "Sunset Orange",
+  "description": "Warm vibrant sunset tones",
+  "tailwind": {
+    "emerald": {
+      "50": "#FFF7ED", "100": "#FFEDD5", "200": "#FED7AA", "300": "#FDBA74",
+      "400": "#FB923C", "500": "#F97316", "600": "#EA580C", "700": "#C2410C",
+      "800": "#9A3412", "900": "#7C2D12", "950": "#431407"
+    },
+    "green": {
+      "50": "#FFFBEB", "100": "#FEF3C7", "200": "#FDE68A", "300": "#FCD34D",
+      "400": "#FBBF24", "500": "#F59E0B", "600": "#D97706", "700": "#B45309",
+      "800": "#92400E", "900": "#78350F", "950": "#451A03"
+    },
+    "amber": {
+      "50": "#FEF2F2", "100": "#FEE2E2", "200": "#FECACA", "300": "#FCA5A5",
+      "400": "#F87171", "500": "#EF4444", "600": "#DC2626", "700": "#B91C1C",
+      "800": "#991B1B", "900": "#7F1D1D"
+    }
+  },
+  "css": {
+    "body_bg": "#FFFCFA",
+    "body_text": "#2D1B0E",
+    "scrollbar": "#FED7AA",
+    "scrollbar_hover": "#FDBA74",
+    "gradient_start": "#FB923C",
+    "gradient_mid": "#FCD34D",
+    "gradient_end": "#F59E0B",
+    "category_active_bg": "#EA580C",
+    "category_active_text": "#ffffff",
+    "category_text": "#C2410C",
+    "category_hover_bg": "#FFF7ED",
+    "skeleton_start": "#FFF7ED",
+    "skeleton_mid": "#FFEDD5",
+    "card_shadow_rgba": "234, 88, 12",
+    "card_hover_shadow_rgba": "234, 88, 12",
+    "toast_bg": "#EA580C",
+    "toast_error_bg": "#DC2626",
+    "bg_image": "none",
+    "bg_repeat": "no-repeat",
+    "bg_size": "auto"
+  }
+}

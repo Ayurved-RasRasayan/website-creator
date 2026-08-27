@@ -1,0 +1,30 @@
+/* Classic Serif Style Overrides */
+
+* {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+.product-card h3,
+.category-card h3 {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.category-btn {
+    border-radius: 0.25rem !important;
+    font-family: 'Playfair Display', serif;
+}
+
+.product-card {
+    border-radius: 0.5rem !important;
+}
+
+.product-card .product-image {
+    border-radius: 0.375rem 0.375rem 0 0;
+}
+
+@media (max-width: 639px) {
+    #categoryShowcase .category-card {
+        border-radius: 0.5rem !important;
+    }
+}

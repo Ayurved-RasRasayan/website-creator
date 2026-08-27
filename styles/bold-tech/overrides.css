@@ -1,0 +1,54 @@
+/* Bold Tech Style Overrides */
+
+* {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+.product-card {
+    border: 2px solid !important;
+    transition: all 0.15s ease !important;
+}
+
+.product-card:hover {
+    transform: translateY(-2px) scale(1.01) !important;
+}
+
+.category-card {
+    border: 2px solid !important;
+}
+
+.category-card:hover {
+    transform: translateY(-2px) !important;
+}
+
+.category-btn {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-size: 0.7rem !important;
+    border: 1px solid;
+}
+
+/* Compact grid on mobile */
+@media (max-width: 639px) {
+    #categoryShowcase {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 0.5rem !important;
+    }
+    #categoryShowcase .category-card {
+        padding: 0.75rem !important;
+        border-radius: 0.5rem !important;
+    }
+    #categoryShowcase .category-card > div:first-child {
+        width: 2rem !important;
+        height: 2rem !important;
+        margin-bottom: 0.4rem !important;
+    }
+    #categoryShowcase .category-card h3 {
+        font-size: 0.8rem !important;
+        margin-bottom: 0.2rem !important;
+    }
+    #categoryShowcase .category-card p:not(:last-child) {
+        display: none !important;
+    }
+}

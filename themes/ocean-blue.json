@@ -1,0 +1,43 @@
+{
+  "name": "Ocean Blue",
+  "description": "Cool calming blue tones",
+  "tailwind": {
+    "emerald": {
+      "50": "#EFF6FF", "100": "#DBEAFE", "200": "#BFDBFE", "300": "#93C5FD",
+      "400": "#60A5FA", "500": "#3B82F6", "600": "#2563EB", "700": "#1D4ED8",
+      "800": "#1E40AF", "900": "#1E3A8A", "950": "#172554"
+    },
+    "green": {
+      "50": "#F0F9FF", "100": "#E0F2FE", "200": "#BAE6FD", "300": "#7DD3FC",
+      "400": "#38BDF8", "500": "#0EA5E9", "600": "#0284C7", "700": "#0369A1",
+      "800": "#075985", "900": "#0C4A6E", "950": "#082F49"
+    },
+    "amber": {
+      "50": "#FFFBEB", "100": "#FEF3C7", "200": "#FDE68A", "300": "#FCD34D",
+      "400": "#FBBF24", "500": "#F59E0B", "600": "#D97706", "700": "#B45309",
+      "800": "#92400E", "900": "#78350F"
+    }
+  },
+  "css": {
+    "body_bg": "#FEFEFE",
+    "body_text": "#1A2B3D",
+    "scrollbar": "#BFDBFE",
+    "scrollbar_hover": "#93C5FD",
+    "gradient_start": "#60A5FA",
+    "gradient_mid": "#93C5FD",
+    "gradient_end": "#38BDF8",
+    "category_active_bg": "#2563EB",
+    "category_active_text": "#ffffff",
+    "category_text": "#1D4ED8",
+    "category_hover_bg": "#EFF6FF",
+    "skeleton_start": "#EFF6FF",
+    "skeleton_mid": "#DBEAFE",
+    "card_shadow_rgba": "37, 99, 235",
+    "card_hover_shadow_rgba": "37, 99, 235",
+    "toast_bg": "#2563EB",
+    "toast_error_bg": "#EF4444",
+    "bg_image": "none",
+    "bg_repeat": "no-repeat",
+    "bg_size": "auto"
+  }
+}

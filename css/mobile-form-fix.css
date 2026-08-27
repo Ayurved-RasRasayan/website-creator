@@ -1,0 +1,143 @@
+/**
+ * Mobile Form Dropdown Fix - CSS Styles
+ * Ensures form dropdown looks great on mobile devices
+ */
+
+/* Mobile Form Select Styling */
+.mobile-form-select {
+    /* Base styling - matches existing mobile weight dropdown */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    /* Custom dropdown arrow using CSS */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23059669' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px;
+    padding-right: 28px !important; /* Space for arrow */
+    
+    /* Ensure proper text rendering */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    /* Smooth transitions */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Focus state - accessibility */
+.mobile-form-select:focus {
+    outline: none;
+    border-color: #059669; /* emerald-600 */
+    box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.15); /* subtle ring */
+}
+
+/* Hover state for touch devices */
+.mobile-form-select:hover {
+    border-color: #10B981; /* emerald-500 */
+}
+
+/* Active/pressed state for mobile taps */
+.mobile-form-select:active {
+    background-color: #ECFDF5; /* emerald-50 */
+    transform: scale(0.99);
+}
+
+/* Container wrapper styling */
+.mobile-form-select:w-full {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Option styling (limited browser support but helps where available) */
+.mobile-form-select option {
+    padding: 8px;
+    font-size: 11px;
+    color: #064E3B; /* emerald-900 */
+    background-color: white;
+}
+
+/* Option hover state */
+.mobile-form-select option:hover,
+.mobile-form-select option:checked {
+    background-color: #D1FAE5; /* emerald-100 */
+    color: #064E3B;
+}
+
+/* Label styling for "Form:" text */
+.mobile-card .text-\[8px\]\.text-emerald-600\/70 {
+    color: rgba(5, 150, 105, 0.7);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+/* Mobile-specific media query adjustments */
+@media (max-width: 639px) {
+    /* Ensure form dropdown is properly sized on small screens */
+    .mobile-form-select {
+        font-size: 10px !important;
+        padding: 8px 28px 8px 10px !important;
+        min-height: 32px;
+        border-radius: 8px;
+        border-width: 1.5px;
+    }
+    
+    /* Add subtle shadow for depth on mobile */
+    .mobile-form-select {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    
+    /* Ensure the form row has proper spacing */
+    .mobile-card > div:has(.mobile-form-select) {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    
+    /* Make sure form dropdown doesn't get cut off */
+    .mobile-card {
+        overflow: visible;
+    }
+    
+    /* Fix for iOS Safari select styling */
+    @supports (-webkit-touch-callout: none) {
+        .mobile-form-select {
+            font-size: 16px; /* Prevent zoom on focus */
+            padding: 10px 28px 10px 12px !important;
+        }
+    }
+}
+
+/* Tablet sizing (slightly larger) */
+@media (min-width: 640px) and (max-width: 767px) {
+    .mobile-form-select {
+        font-size: 11px !important;
+        padding: 10px 30px 10px 12px !important;
+    }
+}
+
+/* Animation for when dropdown appears (if added dynamically) */
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to dynamically added form selects */
+.mobile-form-select[data-animated="true"] {
+    animation: slideInFromTop 0.25s ease-out forwards;
+}
+
+/* Print styles - hide decorative elements */
+@media print {
+    .mobile-form-select {
+        border: 1px solid #000;
+        background-image: none;
+    }
+}
