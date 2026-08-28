@@ -12,7 +12,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 class TestGeneratorUnit(unittest.TestCase):
     def setUp(self):
-        self.test_dir = os.path.join(SCRIPT_DIR, 'downloads', 'test-unit-output')
+        self.test_dir = os.path.join(SCRIPT_DIR, 'test-unit-output-site')
         if os.path.exists(self.test_dir):
             shutil.rmtree(self.test_dir)
         os.makedirs(self.test_dir, exist_ok=True)
@@ -97,7 +97,7 @@ class Test1ShIntegration(unittest.TestCase):
         # Step 6: a (all categories)
         # Step 7: Y Y Y Y (features)
         # Step 8: default output
-        # Confirm: y
+        # Confirm: empty string defaults to Y
         inputs = [
             "", "", "", "", "", "", "", "", # Step 1 Site Info
             "1", # Step 2 Theme
@@ -107,19 +107,23 @@ class Test1ShIntegration(unittest.TestCase):
             "a", # Step 6 Categories
             "Y", "Y", "Y", "Y", # Step 7 Features
             "", # Step 8 Output
-            "y" # Confirm
+            "" # Confirm default Y
         ]
         proc = self.run_1sh(inputs)
         self.assertEqual(proc.returncode, 0, f"STDOUT: {proc.stdout}\nSTDERR: {proc.stderr}")
         self.assertIn("SUCCESS!", proc.stdout)
 
-        output_dir = os.path.join(SCRIPT_DIR, 'downloads', 'my-store-site')
+        output_dir = os.path.join(SCRIPT_DIR, 'my-store-site')
         self.assertTrue(os.path.exists(output_dir))
         self.assertTrue(os.path.isfile(os.path.join(output_dir, 'index.html')))
         self.assertTrue(os.path.isfile(os.path.join(output_dir, 'css', 'styles.css')))
         self.assertTrue(os.path.isfile(os.path.join(output_dir, 'js', 'ui.js')))
         self.assertTrue(os.path.isfile(os.path.join(output_dir, 'js', 'app.js')))
         self.assertTrue(os.path.isfile(os.path.join(output_dir, 'wrangler.toml')))
+
+        # Cleanup
+        if os.path.exists(output_dir):
+            shutil.rmtree(output_dir)
 
     def test_custom_theme_flow(self):
         # Theme choice 9 is Custom Theme
@@ -132,14 +136,18 @@ class Test1ShIntegration(unittest.TestCase):
             "a", # Categories
             "Y", "Y", "Y", "Y", # Features
             "", # Default output
-            "y" # Confirm
+            "" # Confirm default Y
         ]
         proc = self.run_1sh(inputs)
         self.assertEqual(proc.returncode, 0, f"STDOUT: {proc.stdout}\nSTDERR: {proc.stderr}")
         self.assertIn("SUCCESS!", proc.stdout)
 
-        output_dir = os.path.join(SCRIPT_DIR, 'downloads', 'test-custom-site-site')
+        output_dir = os.path.join(SCRIPT_DIR, 'test-custom-site-site')
         self.assertTrue(os.path.exists(output_dir))
+
+        # Cleanup
+        if os.path.exists(output_dir):
+            shutil.rmtree(output_dir)
 
     def test_custom_categories_and_feature_off(self):
         # Step 6: c (custom categories)
@@ -157,16 +165,20 @@ class Test1ShIntegration(unittest.TestCase):
             "Essential Oils", "🧴",
             "Y", "N", "N", "Y", # Cart=Y, Auth=N, Blog=N, Inquiry=Y
             "", # Default output
-            "y" # Confirm
+            "" # Confirm default Y
         ]
         proc = self.run_1sh(inputs)
         self.assertEqual(proc.returncode, 0, f"STDOUT: {proc.stdout}\nSTDERR: {proc.stderr}")
         self.assertIn("SUCCESS!", proc.stdout)
 
-        output_dir = os.path.join(SCRIPT_DIR, 'downloads', 'custom-cats-store-site')
+        output_dir = os.path.join(SCRIPT_DIR, 'custom-cats-store-site')
         self.assertTrue(os.path.exists(output_dir))
         self.assertFalse(os.path.exists(os.path.join(output_dir, 'js', 'auth.js')))
         self.assertFalse(os.path.exists(os.path.join(output_dir, 'js', 'blog.js')))
+
+        # Cleanup
+        if os.path.exists(output_dir):
+            shutil.rmtree(output_dir)
 
     def test_selected_existing_categories_and_emoji_icons(self):
         # Step 6: s (select existing)
@@ -181,14 +193,18 @@ class Test1ShIntegration(unittest.TestCase):
             "1 2", # categories 1 and 2
             "Y", "Y", "Y", "Y",
             "",
-            "y"
+            ""
         ]
         proc = self.run_1sh(inputs)
         self.assertEqual(proc.returncode, 0, f"STDOUT: {proc.stdout}\nSTDERR: {proc.stderr}")
         self.assertIn("SUCCESS!", proc.stdout)
 
-        output_dir = os.path.join(SCRIPT_DIR, 'downloads', 'select-cat-store-site')
+        output_dir = os.path.join(SCRIPT_DIR, 'select-cat-store-site')
         self.assertTrue(os.path.exists(output_dir))
+
+        # Cleanup
+        if os.path.exists(output_dir):
+            shutil.rmtree(output_dir)
 
 if __name__ == '__main__':
     unittest.main()

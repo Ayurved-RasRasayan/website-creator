@@ -408,8 +408,7 @@ echo ""
 # -----------------------------------------------------------------------------
 echo -e "${BOLD}--- Step 8/8: Output Location ---${NC}"
 echo ""
-mkdir -p "${SCRIPT_DIR}/downloads"
-DEFAULT_OUTPUT="${SCRIPT_DIR}/downloads/${PROJECT_NAME}-site"
+DEFAULT_OUTPUT="${SCRIPT_DIR}/${PROJECT_NAME}-site"
 read -p "  Output directory [${DEFAULT_OUTPUT}]: " OUTPUT_DIR
 OUTPUT_DIR="${OUTPUT_DIR:-${DEFAULT_OUTPUT}}"
 echo -e "  ${GREEN}OK${NC} Output: ${BOLD}${OUTPUT_DIR}${NC}"
@@ -438,8 +437,8 @@ echo ""
 echo -e "  Output:        ${BOLD}${OUTPUT_DIR}${NC}"
 echo ""
 
-read -p "  Generate site? [y/N]: " CONFIRM
-CONFIRM="${CONFIRM:-N}"
+read -p "  Generate site? [Y/n]: " CONFIRM
+CONFIRM="${CONFIRM:-Y}"
 
 if [[ "$CONFIRM" =~ ^[Yy]$ ]]; then
     # Write build config JSON using python to avoid JSON escaping issues with custom strings
