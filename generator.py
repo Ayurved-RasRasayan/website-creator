@@ -383,10 +383,15 @@ def apply_features(output_dir, features):
                 print(f"  Feature OFF: Removed {feature_files[feat]}")
 
             # Remove functions directory
-            fn_path = os.path.join(output_dir, feature_functions.get(feat, ''))
-            if fn_path and os.path.isdir(fn_path):
-                shutil.rmtree(fn_path)
-                print(f"  Feature OFF: Removed {feature_functions[feat]}/")
+            rel_fn = feature_functions.get(feat)
+            if rel_fn:
+                fn_path = os.path.join(output_dir, rel_fn)
+                if os.path.isdir(fn_path):
+                    shutil.rmtree(fn_path)
+                    print(f"  Feature OFF: Removed {rel_fn}/")
+                elif os.path.isfile(fn_path):
+                    os.remove(fn_path)
+                    print(f"  Feature OFF: Removed {rel_fn}")
 
             # Remove script tag from index.html
             if html:

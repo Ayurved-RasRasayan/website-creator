@@ -20,6 +20,14 @@ Thumbs.db
 *.swp
 *.swo
 
-# Build
+# Python
+__pycache__/
+*.pyc
+
+# Build & Generated Sites
 dist/
 .cache/
+downloads/
+/*-site/
+.custom-theme.json
+.build-config.json

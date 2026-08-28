@@ -377,7 +377,7 @@ echo ""
 echo -e "  ${DIM}Enable or disable site features. Press Y or Enter for yes, N for no.${NC}"
 echo ""
 
-FEATURES={}
+declare -A FEATURES
 
 # Cart (always core, but can disable)
 read -p "  [1] Shopping Cart & Checkout? [Y/n]: " FEAT_CART
@@ -408,8 +408,7 @@ echo ""
 # -----------------------------------------------------------------------------
 echo -e "${BOLD}--- Step 8/8: Output Location ---${NC}"
 echo ""
-mkdir -p "${SCRIPT_DIR}/downloads"
-DEFAULT_OUTPUT="${SCRIPT_DIR}/downloads/${PROJECT_NAME}-site"
+DEFAULT_OUTPUT="${SCRIPT_DIR}/${PROJECT_NAME}-site"
 read -p "  Output directory [${DEFAULT_OUTPUT}]: " OUTPUT_DIR
 OUTPUT_DIR="${OUTPUT_DIR:-${DEFAULT_OUTPUT}}"
 echo -e "  ${GREEN}OK${NC} Output: ${BOLD}${OUTPUT_DIR}${NC}"
@@ -438,43 +437,48 @@ echo ""
 echo -e "  Output:        ${BOLD}${OUTPUT_DIR}${NC}"
 echo ""
 
-read -p "  Generate site? [y/N]: " CONFIRM
-CONFIRM="${CONFIRM:-N}"
+read -p "  Generate site? [Y/n]: " CONFIRM
+CONFIRM="${CONFIRM:-Y}"
 
 if [[ "$CONFIRM" =~ ^[Yy]$ ]]; then
-    # Write build config JSON
-    cat > "$BUILD_CONFIG" << EOF
-{
-  "theme": "${SELECTED_THEME}",
-  "custom_theme": "${CUSTOM_THEME}",
-  "style": "${SELECTED_STYLE}",
-  "icons": "${SELECTED_ICONS}",
-  "model": "${SELECTED_MODEL}",
-  "categories": "${SELECTED_CATEGORIES}",
-  "custom_category_names": "${CUSTOM_CAT_NAMES}",
-  "output_dir": "${OUTPUT_DIR}",
-  "features": {
-    "cart": "${FEATURES[cart]}",
-    "auth": "${FEATURES[auth]}",
-    "blog": "${FEATURES[blog]}",
-    "inquiry": "${FEATURES[inquiry]}"
+    # Write build config JSON using python to avoid JSON escaping issues with custom strings
+    python3 -c "
+import json
+
+config = {
+  'theme': '''${SELECTED_THEME}''',
+  'custom_theme': '''${CUSTOM_THEME}''',
+  'style': '''${SELECTED_STYLE}''',
+  'icons': '''${SELECTED_ICONS}''',
+  'model': '''${SELECTED_MODEL}''',
+  'categories': '''${SELECTED_CATEGORIES}''',
+  'custom_category_names': '''${CUSTOM_CAT_NAMES}''',
+  'output_dir': '''${OUTPUT_DIR}''',
+  'features': {
+    'cart': '''${FEATURES[cart]}''',
+    'auth': '''${FEATURES[auth]}''',
+    'blog': '''${FEATURES[blog]}''',
+    'inquiry': '''${FEATURES[inquiry]}'''
   },
-  "site": {
-    "site_name": "${SITE_NAME}",
-    "site_tagline": "${SITE_TAGLINE}",
-    "site_copyright": "(c) $(date +%Y) ${SITE_NAME}. All rights reserved.",
-    "contact_email": "${CONTACT_EMAIL}",
-    "contact_phone": "${CONTACT_PHONE}",
-    "city": "${CITY}",
-    "province": "${PROVINCE}",
-    "country": "${COUNTRY}",
-    "currency": "USD",
-    "exchange_rate": "${EXCHANGE_RATE}",
-    "admin_email": "${CONTACT_EMAIL}",
-    "project_name": "${PROJECT_NAME}"
+  'site': {
+    'site_name': '''${SITE_NAME}''',
+    'site_tagline': '''${SITE_TAGLINE}''',
+    'site_copyright': '(c) ' + '$(date +%Y)' + ' ' + '''${SITE_NAME}''' + '. All rights reserved.',
+    'contact_email': '''${CONTACT_EMAIL}''',
+    'contact_phone': '''${CONTACT_PHONE}''',
+    'city': '''${CITY}''',
+    'province': '''${PROVINCE}''',
+    'country': '''${COUNTRY}''',
+    'currency': 'USD',
+    'exchange_rate': '''${EXCHANGE_RATE}''',
+    'admin_email': '''${CONTACT_EMAIL}''',
+    'project_name': '''${PROJECT_NAME}'''
   }
 }
-EOF
+
+with open('${BUILD_CONFIG}', 'w') as f:
+    json.dump(config, f, indent=2)
+"
 
     echo ""
     echo -e "${BOLD}Generating...${NC}"
